@@ -4,7 +4,7 @@ const db = require('./db/database')
 const port = 3000
 
 try {
-    db()
+    db.sequelize.sync()
 } catch (error) {
     Console.log("Could not conenct to db!")
 }
