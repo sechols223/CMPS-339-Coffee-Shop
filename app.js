@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const db = require('./db/database')
 const port = 3000
+const path = require('path')
 
 try {
     db.sequelize.sync()
