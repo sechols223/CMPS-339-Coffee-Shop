@@ -1,5 +1,5 @@
 const {Sequelize} = require('sequelize');
-const dotenv = require('dotenv').config({path: './server/.env'})
+const dotenv = require('dotenv').config({path: './env'})
 
 const username = process.env.DB_USERNAME
 const password = process.env.DB_PASSWORD
