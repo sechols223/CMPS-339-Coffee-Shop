@@ -8,15 +8,15 @@ module.exports = (sequelize, Sequelize) => {
             type: DataTypes.INTEGER,
             primaryKey: true
         },
-        FirstName: {
+        firstname: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        LastName: {
+        lastname: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        Address: {
+        address: {
             type: DataTypes.STRING,
             allowNull: false
         }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "proxt": "http://localhost:3001",
   "engines": {
     "node": "16.x"
   },

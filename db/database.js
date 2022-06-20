@@ -1,4 +1,4 @@
-const {Sequelize} = require('sequelize');
+const {Sequelize, DataTypes} = require('sequelize');
 const dotenv = require('dotenv').config({path: '.env'})
 
 const username = process.env.DB_USERNAME
@@ -25,9 +25,9 @@ const db = {}
 
 db.Sequelize = Sequelize
 db.sequelize = sequelize;
-db.products = require('../models/products')
-db.customers = require('../models/customers')
-db.orders = require('../models/orders')
+db.Product = require('../models/products')
+db.Customer = require('../models/customers')(sequelize,DataTypes)
+db.Order = require('../models/orders')
 
 module.exports = db;
 
