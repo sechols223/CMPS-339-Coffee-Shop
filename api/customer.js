@@ -1,12 +1,15 @@
-module.exports = (app, db) => {
+const express = require('express')
+const router = express.Router()
+const db = require('../db/database')
+const bodyParser = require('body-parser')
     
-    app.get('/api/customers', async (req,res) => {
+    router.get('/', async (req,res) => {
         const [results, metadata] = 
             await db.sequelize.query("SELECT * FROM \"Customer\" ");
             res.json(results)
     })
 
-    app.get('/api/customers/:id', async (req,res) => {
+    router.get('/:id', async (req,res) => {
         const [results, metadata] = 
         await db.sequelize.query(
             `SELECT * FROM \"Customer\" 
@@ -14,16 +17,16 @@ module.exports = (app, db) => {
             res.json(results)
     })
 
-    app.post('/api/customers', (req,res) => {
-        console.log('Got body:', req);
-        /*const [results, metadata] =
+    router.post('/', async (req,res) => {
+        console.log('Got body:', req.body);
+        const [results, metadata] =
         await db.sequelize.query(
             `INSERT INTO \"Customer\"(firstname, lastname, address)
-            VALUES(${req.body.firstname}, ${req.body.lastname}, ${req.body.address})`
-        ) */
+            VALUES(\'${req.body.firstname}\', \'${req.body.lastname}\', \'${req.body.address}\')`
+        ) 
         console.log("Customer created!")
-        //res.json(results)
-        res.json({requestBody: req.body})
+        res.json(results)
+        
     })
     
-}
+module.exports = router;

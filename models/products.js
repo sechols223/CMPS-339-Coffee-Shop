@@ -12,6 +12,10 @@ module.exports = (sequelize, Sequelize) => {
             Name: {
                 type: DataTypes.STRING,
                 allowNull: false
+            },
+            Size: {
+                type:DataTypes.STRING,
+                allwoNull: false
             }
         })
     return Product;

@@ -8,13 +8,11 @@
     "node": "16.x"
   },
   "scripts": {
-    "build": "npm install && concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run",
     "run": "cd client && npm install && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm install && npm run build",
     "test": "jest",
-    "server": "nodemon",
-    "dev": " npm install && concurrently \"npm run server\" \"npm run client\"",
-    "client": "npm start --prefix client"
+    "server": "nodemon"
   },
   "author": "",
   "license": "ISC",

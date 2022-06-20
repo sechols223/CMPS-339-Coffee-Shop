@@ -17,6 +17,10 @@ module.exports = (sequelize, Sequelize) => {
                 type: DataTypes.INTEGER,
                 foreignKey: true,
                 allowNull: false
+            },
+            Amount: {
+                type: DataTypes.INTEGER,
+                allowNull: false
             }
         })
         
