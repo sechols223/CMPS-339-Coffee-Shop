@@ -30,5 +30,15 @@ $do$
             FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
         );
 
+        CREATE TABLE IF NOT EXISTS "User" 
+        (
+            id serial,
+            CustomerId serial NOT NULL,
+            Username VARCHAR NOT NULL,
+            "Password" VARCHAR NOT NULL,
+            PRIMARY KEY (id),
+            FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
+        );
+
     END
 $do$
