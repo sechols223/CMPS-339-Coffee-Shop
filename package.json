@@ -7,10 +7,13 @@
     "node": "16.x"
   },
   "scripts": {
-    "build": "node app.js",
-    "run": "node app.js",
+    "build": "concurrently \"npm run server\" \"npm run client\"",
+    "run": "cd client && npm install && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +25,8 @@
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.21.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2"
   }
 }

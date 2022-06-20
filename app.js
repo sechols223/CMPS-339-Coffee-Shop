@@ -12,10 +12,10 @@ try {
 
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Application listening on port ${port}`)
 })
 
 app.use(express.static(path.join(__dirname, 'client/build')));
-app.get('*', (req, res) => { 
+app.get('/', (req, res) => { 
   res.sendFile(path.join(__dirname + '/client/build/index.html')) 
 });
