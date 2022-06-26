@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_coffee/screens/login.dart';
+<<<<<<< HEAD
 import 'package:flutter_coffee/screens/app_drawer.dart';
 import 'package:flutter_coffee/screens/products/product_drawer.dart';
 import 'package:flutter_coffee/screens/pages/myhomepage.dart';
+=======
+import 'package:flutter_coffee/screens/orders/order_drawer.dart';
+import 'package:flutter_coffee/screens/products/product_drawer.dart';
+import 'package:flutter_coffee/screens/pages/myhomepage.dart';
+//import 'package:flutter_coffee/screens/homepage.dart';
+>>>>>>> master
 
 class NavBar extends StatefulWidget {
   const NavBar({Key key}) : super(key: key);
@@ -19,7 +26,11 @@ class _NavBarState extends State<NavBar> {
     new Login(),
     new MyHomePage(),
     new ProductDrawer(),
+<<<<<<< HEAD
     new AppDrawer(),
+=======
+    new OrderDrawer(),
+>>>>>>> master
   ];
 
   void onItemTapped(int index) {
@@ -50,13 +61,22 @@ class _NavBarState extends State<NavBar> {
             backgroundColor: Colors.brown,
           ),
           BottomNavigationBarItem(
+<<<<<<< HEAD
             icon: Icon(Icons.shopping_cart),
+=======
+            icon: Icon(Icons.money),
+>>>>>>> master
             label: 'Products',
             backgroundColor: Colors.brown,
           ),
           BottomNavigationBarItem(
+<<<<<<< HEAD
             icon: Icon(Icons.file_upload_sharp),
             label: 'Management',
+=======
+            icon: Icon(Icons.shopping_bag),
+            label: 'Orders',
+>>>>>>> master
             backgroundColor: Colors.brown,
           ),
         ],

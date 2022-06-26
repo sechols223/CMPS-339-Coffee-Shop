@@ -5,7 +5,11 @@ import 'dart:convert';
 
 import 'package:flutter_coffee/models/Order_model.dart';
 import 'package:flutter_coffee/screens/orders/delete_orders.dart';
+<<<<<<< HEAD
 import 'package:flutter_coffee/screens/App_drawer.dart';
+=======
+import 'package:flutter_coffee/screens/orders/Order_drawer.dart';
+>>>>>>> master
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -44,8 +48,13 @@ class _GetAllOrdersState extends State<GetAllOrders> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
+<<<<<<< HEAD
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => AppDrawer()));
+=======
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => OrderDrawer()));
+>>>>>>> master
           },
         ),
       ),
