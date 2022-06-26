@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_coffee/screens/login.dart';
-import 'package:flutter_coffee/screens/orders/order_drawer.dart';
+import 'package:flutter_coffee/screens/app_drawer.dart';
 import 'package:flutter_coffee/screens/products/product_drawer.dart';
 import 'package:flutter_coffee/screens/pages/myhomepage.dart';
-//import 'package:flutter_coffee/screens/homepage.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({Key key}) : super(key: key);
@@ -20,7 +19,7 @@ class _NavBarState extends State<NavBar> {
     new Login(),
     new MyHomePage(),
     new ProductDrawer(),
-    new OrderDrawer(),
+    new AppDrawer(),
   ];
 
   void onItemTapped(int index) {
@@ -51,13 +50,13 @@ class _NavBarState extends State<NavBar> {
             backgroundColor: Colors.brown,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.money),
+            icon: Icon(Icons.shopping_cart),
             label: 'Products',
             backgroundColor: Colors.brown,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag),
-            label: 'Orders',
+            icon: Icon(Icons.file_upload_sharp),
+            label: 'Management',
             backgroundColor: Colors.brown,
           ),
         ],
