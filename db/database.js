@@ -19,15 +19,21 @@ const sequelize = new Sequelize(
                 rejectUnauthorized: false
                 } 
             },
+            define: {
+                freezeTableName: true,
+                timestamps: false
+              }
     })
 
 const db = {}
 
 db.Sequelize = Sequelize
 db.sequelize = sequelize;
-db.Product = require('../models/products')
-db.Customer = require('../models/customers')(sequelize,DataTypes)
-db.Order = require('../models/orders')
+db.Product = require('../models/products')(sequelize, Sequelize)
+db.Customer = require('../models/customers')(sequelize, Sequelize)
+db.Order = require('../models/orders')(sequelize, Sequelize)
+db.Session = require('../models/session')(sequelize, Sequelize)
+db.User = require('../models/user')(sequelize, Sequelize)
 
 module.exports = db;
 

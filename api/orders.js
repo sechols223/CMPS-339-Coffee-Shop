@@ -20,11 +20,16 @@ const db = require('../db/database')
         console.log('Got body:', req);
         const [results, metadata] =
         await db.sequelize.query(
-            `INSERT INTO \"Order\"(CustomerId, ProductId, Amount)
-            VALUES(\'${req.body.customerid}\', \'${req.body.productid}\', \'${req.body.amount}\')`
+            `INSERT INTO \"Order\"(CustomerId, ProductId, Amount, ShippingAddress)
+            VALUES(\'${req.body.customerid}\', 
+            \'${req.body.productid}\', 
+            \'${req.body.amount}\', 
+            \'${req.body.address}\'
+            )`
         ) 
         console.log("Order created!")
         //res.json(results)
         res.json({requestBody: req.body})
     })
     
+    module.exports = router
