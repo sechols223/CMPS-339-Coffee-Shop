@@ -3,7 +3,10 @@ const dotenv = require('dotenv').config()
 const router = express.Router()
 const db = require('../db/database')
 const session = require('express-session')
+const { QueryTypes } = require('sequelize')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
+
+
 
 function extendDefaultFields(defaults, session) {
   return {
@@ -24,11 +27,11 @@ router.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     proxy: true,
-    saveUninitialized: true,
+    saveUninitialized: false,
     store: sessionStore
   }))
 
-sessionStore.sync
+//sessionStore.sync({force: true})
 
 const isAuthenticated = require('../middlewares/authentication')
 const user = db.User
@@ -37,21 +40,24 @@ router.get('/',isAuthenticated, (req,res) => {
 })
 
 router.post('/',  async (req,res) => {
-    const username = 
-    db.sequelize.query(`SELECT password FROM User WHERE username = ${req.body.username} `)
-    if (req.body.password == username) {
-            req.session.regenerate((err) => {
+  const user = await db.User.findOne({where: {Password: `${req.body.password}`}})
+  const session = await db.Session.findOne({where: {userid: user.id}})
+    console.log(user.getDataValue('Password'))
+    if (req.body.password === user.getDataValue('Password')) {
+      console.log(user.Password)
+  
+            req.session.regenerate( async (err) => {
                 if (err) {
-                    next(err)
+                    console.log(err)
                 } else {
-                    req.session.userId = db.User.query(
-                        `SELECT \"id\" FROM \"Customer\" WHERE username = \'${req.body.username}`
-                    )
+                                      
+                    req.session.userid = user.id
                     req.session.save((err) => {
                         if (err) {
-                            return next(err);
+                            return err;
                         } else {
-                            res.redirect('/')
+                          console.log(session.sid)
+                            res.redirect('./build/web/index.html')
                         }
                     })
                 }

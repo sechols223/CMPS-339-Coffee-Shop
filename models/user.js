@@ -1,26 +1,42 @@
 const sequelize = require('sequelize')
 const {Sequelize, DataTypes} = require("sequelize");
+const { User } = require('../db/database');
 
 module.exports = (sequelize, Sequelize) => {
-    const Session = sequelize.define({
+    const User = sequelize.define('User', 
+    {
 
         id: {
             type: DataTypes.INTEGER,
-            primaryKey: true
+            primaryKey: true,
+            get() {
+                const rawValue = this.getDataValue('id');
+                return rawValue;
+              },
         },
-        CustomerId: {
+        customerid: {
             type: DataTypes.INTEGER,
             foreignKey: true,
             allowNull: false
         },
-        Username: {
+        username: {
             type: DataTypes.STRING,
             allowNull: false,
+            get() {
+                const rawValue = this.getDataValue('password');
+                return rawValue ? rawValue.toUpperCase() : null;
+              }
         },
         Password: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            get() {
+                const rawValue = this.getDataValue('username');
+                return rawValue ? rawValue.toUpperCase() : null;
+              }
         }
-
+        
+        
     })
+    return User;
 }

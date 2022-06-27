@@ -53,6 +53,7 @@ $do$
         ALTER TABLE "Session" ADD FOREIGN KEY  (UserId)
             REFERENCES "User" (id);
         ALTER TABLE "Session" ADD PRIMARY KEY (sid);
+        ALTER TABLE "Session" ALTER COLUMN "sid" TYPE varchar;
 
 
     END

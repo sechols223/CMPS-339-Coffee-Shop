@@ -8,24 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/products/create_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/create_products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/products/delete_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/delete_products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/products/get_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/get_products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/session.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

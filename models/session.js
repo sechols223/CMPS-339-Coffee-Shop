@@ -2,24 +2,45 @@ const sequelize = require('sequelize')
 const {Sequelize, DataTypes} = require("sequelize");
 
 module.exports = (sequelize, Sequelize) => {
-    const Session = sequelize.define({
+    const Session = sequelize.define('Session',
+        {
 
         sid: {
-            type: DataTypes.INTEGER,
-            primaryKey: true
+            type: DataTypes.STRING,
+            primaryKey: true,
+            get() {
+                const rawValue = this.getDataValue('sid');
+                return rawValue;
+              }
         },
-        UserId: {
+        userid: {
             type: DataTypes.INTEGER,
             foreignKey: true,
-            allowNull: false
+            allowNull: false,
+            get() {
+                const rawValue = this.getDataValue('userid');
+                return rawValue;
+              },
+              getterMethods: {
+                userid() {
+                    return this.userid
+                }
+              },
+              setterMethods: {
+                userid(value) {
+                    this.setDataValue('userid', value)
+                }
+
+              }
         },
-        Expires: {
+        expires: {
             type: DataTypes.DATE,
             allowNull: false,
         },
-        Data: {
+        data: {
             type: DataTypes.STRING
         }
 
     })
+    return Session;
 }
