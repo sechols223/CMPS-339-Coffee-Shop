@@ -20,7 +20,7 @@ class _GetAllProductsState extends State<GetAllProducts> {
   var products = List<ProductModel>.generate(200, (index) => null);
 
   Future<List<ProductModel>> getAllProducts() async {
-    var data = await http.get('http://localhost:8080/getAllProducts');
+    var data = await http.get('http://localhost:8080/api/products');
     var jsonData = json.decode(data.body);
 
     List<ProductModel> product = [];
@@ -86,7 +86,7 @@ class DetailPage extends StatelessWidget {
   DetailPage(this.productModel);
 
   deleteProduct1(ProductModel productModel) async {
-    final url = Uri.parse('http://localhost:8080/deleteProduct');
+    final url = Uri.parse('http://localhost:8080//api/products/:id');
     final request = http.Request("DELETE", url);
     request.headers
         .addAll(<String, String>{"Content-type": "application/json"});

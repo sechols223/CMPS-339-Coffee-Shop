@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:flutter_coffee/models/Order_model.dart';
+import 'package:flutter_coffee/screens/app_drawer.dart';
 import 'package:flutter_coffee/screens/orders/order_drawer.dart';
 import 'package:flutter_coffee/screens/orders/create_orders.dart';
 import 'package:flutter/material.dart';
@@ -73,6 +74,9 @@ class _UpdateOrderState extends State<UpdateOrder> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => AppDrawer()));
+
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => OrderDrawer()));
           },
