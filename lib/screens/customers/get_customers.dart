@@ -18,8 +18,8 @@ class _GetAllCustomersState extends State<GetAllCustomers> {
   var customers = List<CustomerModel>.generate(200, (index) => null);
 
   Future<List<CustomerModel>> getAllCustomers() async {
-    var data = await http.get(
-        'http://localhost:8080//api/customers'); //spring boot for getting all customers
+    var data = await http
+        .get('/api/customers'); //spring boot for getting all customers
     var jsonData = json.decode(data.body);
 
     List<CustomerModel> customer = [];

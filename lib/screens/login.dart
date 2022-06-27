@@ -18,7 +18,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final _formkey = GlobalKey<FormState>();
   User user = User("", "", "", "", "");
-  String url = "http://localhost:8080/login"; //springboot for login
+  String url = "/login"; //springboot for login
   Future save() async {
     var res = await http.post(url,
         headers: {'Context-Type': 'application/json'},
