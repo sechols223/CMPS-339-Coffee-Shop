@@ -40,5 +40,20 @@ $do$
             FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
         );
 
+        CREATE TABLE IF NOT EXISTS "Session"
+        (
+            sid serial,
+            UserId serial NOT NULL,
+            Expires date NOT NULL,
+            Data varchar
+        );
+
+        ALTER TABLE "Order" ADD COLUMN IF NOT EXISTS ShippingAddress varchar;
+
+        ALTER TABLE "Session" ADD FOREIGN KEY  (UserId)
+            REFERENCES "User" (id);
+        ALTER TABLE "Session" ADD PRIMARY KEY (sid);
+
+
     END
 $do$
