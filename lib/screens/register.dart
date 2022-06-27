@@ -17,7 +17,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final _formkey = GlobalKey<FormState>();
   User user = User("", "", "", "", "");
-  String url = "http://localhost:8080/register"; //springboot for Register
+  String url = '/register'; //springboot for Register
   Future save() async {
     var res = await http.post(url,
         headers: {'Context-Type': 'application/json'},

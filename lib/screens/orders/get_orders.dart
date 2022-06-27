@@ -22,8 +22,8 @@ class _GetAllOrdersState extends State<GetAllOrders> {
   var orders = List<OrderModel>.generate(200, (index) => null);
 
   Future<List<OrderModel>> getAllOrders() async {
-    var data = await http.get(
-        'http://localhost:8080/api/orders'); //spring boot for getting all orders
+    var data =
+        await http.get('/api/orders'); //spring boot for getting all orders
     var jsonData = json.decode(data.body);
 
     List<OrderModel> order = [];
@@ -100,7 +100,7 @@ class DetailPage extends StatelessWidget {
   DetailPage(this.orderModel);
 
   deleteOrder1(OrderModel orderModel) async {
-    final url = Uri.parse('http://localhost:8080/api/orders/:id');
+    final url = Uri.parse('/api/orders/:id');
     final request = http.Request("DELETE", url);
     request.headers
         .addAll(<String, String>{"Content-type": "application/json"});

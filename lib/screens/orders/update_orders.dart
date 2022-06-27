@@ -28,8 +28,7 @@ class UpdateOrder extends StatefulWidget {
 // ignore: missing_return
 Future<OrderModel> updateOrders(
     OrderModel orderModel, BuildContext context) async {
-  var url =
-      "http://localhost:8080/updateOrder"; // spring boot for updating orders
+  var url = "/api/orders"; // spring boot for updating orders
   var response = await http.put(url,
       headers: <String, String>{"Content-Type": "application/json"},
       body: jsonEncode(orderModel));
