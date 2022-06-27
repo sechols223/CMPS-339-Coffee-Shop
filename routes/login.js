@@ -28,7 +28,7 @@ router.use(
     store: sessionStore
   }))
 
-sessionStore.sync()
+sessionStore.sync
 
 const isAuthenticated = require('../middlewares/authentication')
 const user = db.User

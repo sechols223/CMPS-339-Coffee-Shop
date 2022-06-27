@@ -50,9 +50,10 @@ $do$
 
         ALTER TABLE "Order" ADD COLUMN IF NOT EXISTS ShippingAddress varchar;
 
-        ALTER TABLE "Session" ADD FOREIGN KEY (UserId)
+        ALTER TABLE "Session" ADD FOREIGN KEY  (UserId)
             REFERENCES "User" (id);
         ALTER TABLE "Session" ADD PRIMARY KEY (sid);
+
 
     END
 $do$

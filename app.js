@@ -22,15 +22,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 app.use('/api/customers', customers)
-app.use('/auth/register', register);
+app.use('/api/products', products)
+app.use('/api/orders', orders)
+app.use('/auth/register', register)
 app.use('/auth/login', login)
 
-app.use(express.static(path.join(__dirname, 'client/build')));
-app.get('/', (req, res) => { 
-  res.sendFile(path.join(__dirname + '/client/build/index.html'))
-  res.json({satus: true}) 
-});
+app.use(express.static(path.join(__dirname, './build/web')));
 
+app.get('/', (req,res) => {
+  res.send('./build/web/index.html')
+})
 
 
 module.exports = app;
