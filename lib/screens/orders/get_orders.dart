@@ -5,11 +5,9 @@ import 'dart:convert';
 
 import 'package:flutter_coffee/models/Order_model.dart';
 import 'package:flutter_coffee/screens/orders/delete_orders.dart';
-<<<<<<< HEAD
 import 'package:flutter_coffee/screens/App_drawer.dart';
-=======
+
 import 'package:flutter_coffee/screens/orders/Order_drawer.dart';
->>>>>>> master
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -25,7 +23,7 @@ class _GetAllOrdersState extends State<GetAllOrders> {
 
   Future<List<OrderModel>> getAllOrders() async {
     var data = await http.get(
-        'http://localhost:8080/getAllOrders'); //spring boot for getting all orders
+        'http://localhost:8080/api/orders'); //spring boot for getting all orders
     var jsonData = json.decode(data.body);
 
     List<OrderModel> order = [];
@@ -48,13 +46,10 @@ class _GetAllOrdersState extends State<GetAllOrders> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-<<<<<<< HEAD
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => AppDrawer()));
-=======
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => OrderDrawer()));
->>>>>>> master
           },
         ),
       ),
@@ -105,7 +100,7 @@ class DetailPage extends StatelessWidget {
   DetailPage(this.orderModel);
 
   deleteOrder1(OrderModel orderModel) async {
-    final url = Uri.parse('http://localhost:8080/deleteOrder');
+    final url = Uri.parse('http://localhost:8080/api/orders/:id');
     final request = http.Request("DELETE", url);
     request.headers
         .addAll(<String, String>{"Content-type": "application/json"});

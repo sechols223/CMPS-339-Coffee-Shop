@@ -17,7 +17,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   final _formkey = GlobalKey<FormState>();
-  User user = User("", "");
+  User user = User("", "", "", "", "");
   String url = "http://localhost:8080/login"; //springboot for login
   Future save() async {
     var res = await http.post(url,
@@ -37,22 +37,11 @@ class _LoginState extends State<Login> {
               children: [
                 Container(
                   height: 700,
-                  //width: MediaQuery.of(context).size.width,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      //color: Colors.brown,
                       image: DecorationImage(
                     image: AssetImage('lib/images/login.jpg'),
                     fit: BoxFit.cover,
-                    /*boxShadow: [
-                        BoxShadow(
-                            blurRadius: 10,
-                            color: Colors.grey,
-                            offset: Offset(1, 5))
-                      ],
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(80),
-                          bottomRight: Radius.circular(12))),*/
                   )),
                   child: Padding(
                     padding: const EdgeInsets.all(12.0),

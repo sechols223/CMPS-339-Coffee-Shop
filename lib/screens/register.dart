@@ -16,13 +16,18 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
   final _formkey = GlobalKey<FormState>();
-  User user = User("", "");
+  User user = User("", "", "", "", "");
   String url = "http://localhost:8080/register"; //springboot for Register
   Future save() async {
     var res = await http.post(url,
         headers: {'Context-Type': 'application/json'},
-        body: json
-            .encode({'username': user.username, 'password': user.password}));
+        body: json.encode({
+          'firstname': user.firstname,
+          'lastname': user.lastname,
+          'username': user.username,
+          'address': user.address,
+          'password': user.password
+        }));
     print(res.body);
     if (res.body != null) {
       Navigator.pop(context);
@@ -38,46 +43,35 @@ class _RegisterState extends State<Register> {
             child: Column(
               children: [
                 Container(
-                  height: 700,
-                  //width: MediaQuery.of(context).size.width,
+                  height: 800,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      //color: Colors.brown,
                       image: DecorationImage(
                     image: AssetImage('lib/images/login.jpg'),
                     fit: BoxFit.cover,
-                    /*boxShadow: [
-                        BoxShadow(
-                            blurRadius: 10,
-                            color: Colors.grey,
-                            offset: Offset(1, 5))
-                      ],
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(80),
-                          bottomRight: Radius.circular(12))),*/
                   )),
                   child: Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: Column(
                       children: [
                         SizedBox(
-                          height: 100,
+                          height: 10,
                         ),
                         Text("Register",
                             style: GoogleFonts.habibi(
                               fontWeight: FontWeight.bold,
-                              fontSize: 50,
+                              fontSize: 40,
                               color: Colors.white,
                             )),
                         SizedBox(
-                          height: 60,
+                          height: 10,
                         ),
                         Align(
                           alignment: Alignment.topLeft,
                           child: Text(
                             "User",
                             style: GoogleFonts.roboto(
-                              fontSize: 40,
+                              fontSize: 30,
                               color: Colors.white,
                             ),
                           ),
@@ -95,10 +89,10 @@ class _RegisterState extends State<Register> {
 
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 20, color: Colors.white),
                           decoration: InputDecoration(
                               errorStyle:
-                                  TextStyle(fontSize: 20, color: Colors.red),
+                                  TextStyle(fontSize: 10, color: Colors.red),
                               border: OutlineInputBorder(
                                   borderSide: BorderSide.none)),
                         ),
@@ -106,15 +100,129 @@ class _RegisterState extends State<Register> {
                           height: 8,
                           color: Colors.white,
                         ),
+                        //firstname
                         SizedBox(
-                          height: 30,
+                          height: 10,
+                        ),
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "First Name",
+                            style: GoogleFonts.roboto(
+                              fontSize: 30,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        TextFormField(
+                          controller:
+                              TextEditingController(text: user.firstname),
+                          onChanged: (val) {
+                            user.firstname = val;
+                          },
+                          validator: (String value) {
+                            if (value.isEmpty) {
+                              return "First name can't be empty";
+                            }
+
+                            return null;
+                          },
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          decoration: InputDecoration(
+                              errorStyle:
+                                  TextStyle(fontSize: 10, color: Colors.red),
+                              border: OutlineInputBorder(
+                                  borderSide: BorderSide.none)),
+                        ),
+                        Container(
+                          height: 8,
+                          color: Colors.white,
+                        ),
+                        // last name
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "Last Name",
+                            style: GoogleFonts.roboto(
+                              fontSize: 30,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        TextFormField(
+                          controller:
+                              TextEditingController(text: user.lastname),
+                          onChanged: (val) {
+                            user.lastname = val;
+                          },
+                          validator: (String value) {
+                            if (value.isEmpty) {
+                              return "Last name can't be empty";
+                            }
+
+                            return null;
+                          },
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          decoration: InputDecoration(
+                              errorStyle:
+                                  TextStyle(fontSize: 10, color: Colors.red),
+                              border: OutlineInputBorder(
+                                  borderSide: BorderSide.none)),
+                        ),
+                        Container(
+                          height: 8,
+                          color: Colors.white,
+                        ),
+                        //address
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "Address",
+                            style: GoogleFonts.roboto(
+                              fontSize: 30,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        TextFormField(
+                          controller: TextEditingController(text: user.address),
+                          onChanged: (val) {
+                            user.address = val;
+                          },
+                          validator: (String value) {
+                            if (value.isEmpty) {
+                              return "Address can't be empty";
+                            }
+
+                            return null;
+                          },
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          decoration: InputDecoration(
+                              errorStyle:
+                                  TextStyle(fontSize: 10, color: Colors.red),
+                              border: OutlineInputBorder(
+                                  borderSide: BorderSide.none)),
+                        ),
+                        Container(
+                          height: 8,
+                          color: Colors.white,
+                        ),
+                        //password
+                        SizedBox(
+                          height: 10,
                         ),
                         Align(
                           alignment: Alignment.topLeft,
                           child: Text(
                             "Password",
                             style: GoogleFonts.roboto(
-                              fontSize: 40,
+                              fontSize: 30,
                               color: Colors.white,
                             ),
                           ),
@@ -132,10 +240,10 @@ class _RegisterState extends State<Register> {
 
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 20, color: Colors.white),
                           decoration: InputDecoration(
                               errorStyle:
-                                  TextStyle(fontSize: 20, color: Colors.red),
+                                  TextStyle(fontSize: 10, color: Colors.red),
                               border: OutlineInputBorder(
                                   borderSide: BorderSide.none)),
                         ),
@@ -144,7 +252,7 @@ class _RegisterState extends State<Register> {
                           color: Colors.white,
                         ),
                         SizedBox(
-                          height: 60,
+                          height: 40,
                         ),
                         Center(
                           child: InkWell(
