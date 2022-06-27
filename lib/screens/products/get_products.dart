@@ -20,7 +20,7 @@ class _GetAllProductsState extends State<GetAllProducts> {
   var products = List<ProductModel>.generate(200, (index) => null);
 
   Future<List<ProductModel>> getAllProducts() async {
-    var data = await http.get('http://localhost:8080/getAllProducts');
+    var data = await http.get('http://localhost:3000/api/products');
     var jsonData = json.decode(data.body);
 
     List<ProductModel> product = [];

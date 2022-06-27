@@ -1,13 +1,14 @@
 const express = require('express')
 const router = express.Router()
+const db = require('../db/database')
     
-    router.get('/api/products', async (req,res) => {
+    router.get('/', async (req,res) => {
         const [results, metadata] = 
             await db.sequelize.query("SELECT * FROM \"Product\" ");
             res.json(results)
     })
 
-    router.get('/api/products/:id', async (req,res) => {
+    router.get('/:id', async (req,res) => {
         const [results, metadata] = 
         await db.sequelize.query(
             `SELECT * FROM \"Product\" 
@@ -15,7 +16,7 @@ const router = express.Router()
             res.json(results)
     })
 
-    router.get('/api/products/:name/:size', async (req,res) => {
+    router.get('/:name/:size', async (req,res) => {
         const [results, metadata] = 
         await db.sequelize.query(
             `SELECT * FROM \"Product\" 
@@ -23,11 +24,11 @@ const router = express.Router()
             res.json(results)
     })
 
-    router.post('/api/products', async (req,res) => {
+    router.post('/create', async (req,res) => {
          const [results, metadata] =
         await db.sequelize.query(
             `INSERT INTO \"Product\"(Name, Size)
-            VALUES(\'${req.body.Name}\', \'${req.body.Size}\')`
+            VALUES(\'${req.body.name}\', \'${req.body.size}\')`
         ) 
         console.log("Product created!")
         //res.json(results)

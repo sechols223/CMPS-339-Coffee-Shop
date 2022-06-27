@@ -16,7 +16,7 @@ class RegisterProduct extends StatefulWidget {
 
 Future<ProductModel> registerProduct(
     String name, size, BuildContext context) async {
-  var url = "http://localhost:8080/addProduct";
+  var url = "http://localhost:3000/api/products/create";
   var response = await http.post(url,
       headers: <String, String>{"Content-Type": "application/json"},
       body: jsonEncode(<String, String>{"name": name, "size": size}));
