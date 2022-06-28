@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Created Application structure">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/session.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +32,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2ALyNxXgIFlHFHBAtmQucxCoBhh" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,11 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cecho/DataGripProjects/CMPS-339-Coffee-Shop/sql&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/cecho/DataGripProjects/CMPS-339-Coffee-Shop/sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\sql" />
@@ -76,6 +79,7 @@
       <updated>1655422399124</updated>
       <workItem from="1655422400626" duration="6939000" />
       <workItem from="1655502039177" duration="489000" />
+      <workItem from="1656384162309" duration="726000" />
     </task>
     <servers />
   </component>
