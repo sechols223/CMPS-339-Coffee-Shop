@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Created Application structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/Controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/Controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/Controllers/OrderController.java" afterDir="false" />
-    </list>
+    <list default="true" id="fae723ed-50d3-4390-8646-43564e53cb53" name="Changes" comment="Updated Procfile" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,66 +13,139 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="7ff01966-82c5-445c-9ea3-455f1c65cb1a" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
       <list>
-        <option value="Samuel Echols &lt;samuel.echols@selu.edu&gt;" />
+        <option value="master" />
       </list>
     </option>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
       <map>
-        <entry key="$PROJECT_DIR$" value="samuel" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2ALyNxXgIFlHFHBAtmQucxCoBhh" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="2BD3iupSXZnGzGOkCV7fKQma04X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/cecho"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.29162833" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\sql" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\server\src\main" />
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\server" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/server">
-      <envs pass-parent-envs="false">
-        <env name="PATH" value="C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files\\Oculus\\ Support\\oculus-runtime;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\ \;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\node.exe;C:\\ProgramData\\chocolatey\\bin;C :\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk-17.0.2\\bin;C:\\Program Files\\Java\\jdk-17.0.2;C:\\Program Files\\apache-maven -3.8.4-bin\\apache-maven-3.8.4\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Serv er\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Users\\cecho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\cecho\\AppData \\Roaming\\npm;C:\\Program Files (x86)\\heroku\\bin;C:\\Program Files\\apache-maven-3.8.4\\bin;C:\\Users\\cecho\\AppData\\Local\\Prog rams\\Microsoft VS Code\\bin;C:\\Users\\cecho\\.dotnet\\tools;C:\\Users\\cecho\\AppData\\Local\\gitkraken\\bin;C:\\Users\\cecho\\.dot net\\tools;C:\\Users\\cecho\\AppData\\Local\\Android\\Sdk\\platform-tools;" />
-      </envs>
+  <component name="RunManager" selected="Spring Boot.CoffeeShopApplication">
+    <configuration name="CoffeeShop-endpoints#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/CoffeeShop-endpoints.http" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="CoffeeShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CoffeeShop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.githib.sechols223.coffeeshop.CoffeeShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.CoffeeShop-endpoints#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Created Customer, Product, and Order tables" />
-      <created>1655422399124</created>
+      <changelist id="fae723ed-50d3-4390-8646-43564e53cb53" name="Changes" comment="" />
+      <created>1656426969944</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1655422399124</updated>
-      <workItem from="1655422400626" duration="6939000" />
-      <workItem from="1655502039177" duration="489000" />
-      <workItem from="1656384162309" duration="726000" />
-      <workItem from="1656426795296" duration="164000" />
-      <workItem from="1656514279805" duration="41000" />
+      <updated>1656426969944</updated>
+      <workItem from="1656426972552" duration="14853000" />
+      <workItem from="1656529163231" duration="26063000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished creating all Product endpoints">
+      <created>1656453260456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656453260456</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finished the GET endpoints for the Order table">
+      <created>1656877604340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656877604341</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finished all endpoints for Order">
+      <created>1656882002599</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656882002599</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated Procfile">
+      <created>1656882205682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656882205682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,12 +161,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created Customer, Product, and Order tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Customer, Product, and Order tables" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Finished creating all Product endpoints" />
+    <MESSAGE value="Finished the GET endpoints for the Order table" />
+    <MESSAGE value="Finished all endpoints for Order" />
+    <MESSAGE value="Updated Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Procfile" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/CustomerController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
