@@ -2,6 +2,7 @@ package com.githib.sechols223.coffeeshop.models;
 
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name="product")
@@ -16,6 +17,8 @@ public class Product {
     @Column(name="size")
     private String size;
 
+    @OneToMany(mappedBy = "id")
+    private Set<Product> products;
 
     public Product() {}
 

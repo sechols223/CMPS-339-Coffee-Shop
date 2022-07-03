@@ -2,7 +2,7 @@ DO
 $do$
     BEGIN
 
-        CREATE TABLE IF NOT EXISTS "Product"
+        CREATE TABLE IF NOT EXISTS "product"
         (
             id   serial,
             Name varchar(50) NOT NULL,
@@ -10,7 +10,7 @@ $do$
             PRIMARY KEY (id)
         );
 
-        CREATE TABLE IF NOT EXISTS "Customer"
+        CREATE TABLE IF NOT EXISTS "customer"
         (
             id        serial,
             FirstName varchar(50) NOT NULL,
@@ -19,7 +19,7 @@ $do$
             PRIMARY KEY (id)
         );
 
-        CREATE TABLE IF NOT EXISTS "Order"
+        CREATE TABLE IF NOT EXISTS "order"
         (
             id         serial,
             CustomerId serial  NOT NULL,
@@ -30,7 +30,7 @@ $do$
             FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
         );
 
-        CREATE TABLE IF NOT EXISTS "User" 
+        CREATE TABLE IF NOT EXISTS "user"
         (
             id serial,
             CustomerId serial NOT NULL,
@@ -40,7 +40,7 @@ $do$
             FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
         );
 
-        CREATE TABLE IF NOT EXISTS "Session"
+        CREATE TABLE IF NOT EXISTS "session"
         (
             sid serial,
             UserId serial NOT NULL,

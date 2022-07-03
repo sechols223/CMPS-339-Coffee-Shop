@@ -3,7 +3,9 @@ package com.githib.sechols223.coffeeshop.models;
 import org.springframework.data.relational.core.mapping.Table;
 
 import javax.persistence.*;
+import java.util.Set;
 
+@SuppressWarnings("unused")
 @Entity
 @Table(name = "Customer")
 public class Customer {
@@ -19,6 +21,8 @@ public class Customer {
     @Column(name="address")
     private String address;
 
+    @OneToMany(mappedBy = "id")
+    private Set<Order> orders;
 
     public Customer(){
 
@@ -29,6 +33,7 @@ public class Customer {
         this.lastname = lastname;
         this.address = address;
     }
+
     public int getId() {
         return  this.id;
     }

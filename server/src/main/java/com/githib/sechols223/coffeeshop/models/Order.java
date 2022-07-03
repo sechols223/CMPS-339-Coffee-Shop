@@ -1,46 +1,64 @@
 package com.githib.sechols223.coffeeshop.models;
 
-
 import javax.persistence.*;
 
 @SuppressWarnings("unused")
 @Entity
-@Table(name="order")
+@Table(name = "\"order\"")
 public class Order {
 
     @Id
     @GeneratedValue
     private int id;
-    @Column(name="customerid")
-    private int customerId;
-    @Column(name="productid")
-    private int productId;
+
+
+    @ManyToOne
+    @JoinColumn(name = "productid")
+    private Product product;
+
+    @ManyToOne
+    @JoinColumn(name = "customerid")
+    private Customer customer;
+
+    @Column(name = "amount")
+    private int amount;
+
+    @Column(name = "customerid", insertable = false, updatable = false)
+    private int customerid;
+
+    @Column(name = "productid", insertable = false, updatable = false)
+    private int productid;
 
     public Order() {
     }
 
-    public Order(int customerId, int productId) {
-        this.customerId = customerId;
-        this.productId = productId;
+    public Order(Customer customer, Product product, int amount) {
+        this.amount = amount;
+        this.customer = customer;
+        this.product = product;
+
+        this.customerid = customer.getId();
+        this.productid = product.getId();
+    }
+
+    public int getCustomerid() {
+        return customerid;
+    }
+
+    public int getProductid() {
+        return productid;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
     public int getId() {
         return id;
     }
 
-    public int getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
-    }
-
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
-    }
 }

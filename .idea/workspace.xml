@@ -5,28 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Created Application structure">
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/CoffeeShopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/com/githib/sechols223/coffeeshop/CoffeeShopApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/Controllers/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/repositories/OrderRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CoffeeShop/src/main/java/com/githib/sechols223/coffeeshop/Controllers/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CoffeeShop/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CoffeeShop/src/main/java/com/githib/sechols223/coffeeshop/models/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CoffeeShop/src/main/java/com/githib/sechols223/coffeeshop/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CoffeeShop/src/main/java/com/githib/sechols223/coffeeshop/repositories/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CoffeeShop/src/main/java/com/githib/sechols223/coffeeshop/repositories/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/githib/sechols223/coffeeshop/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +51,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/cecho"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\sql" />
@@ -95,6 +81,7 @@
       <workItem from="1655502039177" duration="489000" />
       <workItem from="1656384162309" duration="726000" />
       <workItem from="1656426795296" duration="164000" />
+      <workItem from="1656514279805" duration="41000" />
     </task>
     <servers />
   </component>
