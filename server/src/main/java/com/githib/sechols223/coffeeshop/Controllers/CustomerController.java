@@ -41,7 +41,8 @@ public class CustomerController {
     }
 
     @PostMapping("/customers")
-    public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer) {
+    public ResponseEntity<Customer> createCustomer(
+            @RequestBody Customer customer) {
         try {
             Customer _customer = customerRepository
                     .save(new Customer(customer.getFirstname(), customer.getLastname(), customer.getAddress()));

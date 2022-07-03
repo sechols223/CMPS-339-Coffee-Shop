@@ -5,13 +5,11 @@ import com.githib.sechols223.coffeeshop.models.Order;
 import com.githib.sechols223.coffeeshop.models.Product;
 import com.githib.sechols223.coffeeshop.repositories.CustomerRepository;
 import com.githib.sechols223.coffeeshop.repositories.OrderRepository;
+import com.githib.sechols223.coffeeshop.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +23,8 @@ public class OrderController {
     private CustomerRepository customerRepository;
     @Autowired
     private OrderRepository orderRepository;
+    @Autowired
+    private ProductRepository productRepository;
 
     @GetMapping("/orders")
     public ResponseEntity<List<Order>> getAllOrders() {
@@ -51,5 +51,53 @@ public class OrderController {
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+    }
+
+    @PostMapping("/orders/{customerid}/{productid}")
+    public ResponseEntity<Order> createOrder(
+            @PathVariable("customerid") int customerid,
+            @PathVariable("productid") int productid,
+            @RequestBody Order order) {
+
+        Optional<Customer> customerData = customerRepository.findById(customerid);
+        Optional<Product> productData = productRepository.findById(productid);
+
+        if (customerData.isPresent()) {
+            Customer customer = customerData.get();
+            if (productData.isPresent()) {
+                Product product = productData.get();
+                Order _order = orderRepository.save(
+                        new Order(customer, product, order.getAmount())
+                );
+                return new ResponseEntity<>(_order, HttpStatus.CREATED);
+            } else {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @DeleteMapping("/orders/{customerid}/{orderid}")
+    public ResponseEntity<Order> deleteOrder(
+                    @PathVariable("customerid") int customerid,
+                    @PathVariable("orderid") int orderid) {
+
+        Optional<Customer> customerData = customerRepository.findById(customerid);
+        List<Order> orders = new ArrayList<>();
+
+        if (customerData.isPresent()) {
+            orderRepository.findByCustomerId(customerid).forEach(orders::add);
+
+            for (Order order : orders) {
+                if (order.getId() == orderid) {
+                    orderRepository.deleteById(order.getId());
+                    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+                } else {
+                    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+                }
+            }
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
