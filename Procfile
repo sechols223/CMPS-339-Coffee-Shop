@@ -1,1 +1,2 @@
-web: npm run build && java -jar server/target/CoffeeShop.jar
+web: java -jar server/target/CoffeeShop.jar
+web: npm run build 
