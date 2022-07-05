@@ -7,9 +7,8 @@ import java.util.Set;
 
 @SuppressWarnings("unused")
 @Entity
-@Table(name = "customer")
+@Table(name = "\"customer\"")
 public class Customer {
-
     @Id
     @GeneratedValue
     @Column(name="id")
