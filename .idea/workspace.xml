@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Fixed JRE version in pom.xml">
-      <change beforePath="$PROJECT_DIR$/src/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Added system.properties">
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657031952858</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added system.properties">
+      <created>1657032107945</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032107945</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,12 +209,12 @@
     </ignored-roots>
     <MESSAGE value="Created Customer, Product, and Order tables" />
     <MESSAGE value="Updated pom.xml" />
-    <MESSAGE value="Added system.properties" />
     <MESSAGE value="updated spring boot applcation port" />
     <MESSAGE value="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports" />
     <MESSAGE value="Fixed Java Runtime Version and recompiled with JRE 18" />
     <MESSAGE value="Fixed JRE version in pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed JRE version in pom.xml" />
+    <MESSAGE value="Added system.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added system.properties" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
