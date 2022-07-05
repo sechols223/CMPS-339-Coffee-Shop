@@ -7,7 +7,7 @@ import java.util.Set;
 
 @SuppressWarnings("unused")
 @Entity
-@Table(name = "Customer")
+@Table(name = "customer")
 public class Customer {
 
     @Id
