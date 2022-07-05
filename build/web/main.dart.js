@@ -23218,7 +23218,7 @@ var $async$aod=A.a1(function(e,f){if(e===1)return A.Y(f,r)
 while(true)switch(s){case 0:q=t.O
 p=A.aC(["Content-Type","application/json"],q,q)
 s=2
-return A.W(A.ao9("http://localhost:8080/api/orders/:id",B.ag.rJ(A.aC(["customerid",a,"productid",b,"amount",c],q,q),null),p),$async$aod)
+return A.W(A.ao9(":8080/api/orders/:id",B.ag.rJ(A.aC(["customerid",a,"productid",b,"amount",c],q,q),null),p),$async$aod)
 case 2:o=f
 A.mo(A.mk(o.e).c.a.h(0,"charset")).bU(0,o.w)
 if(o.b===200)A.arY(B.E,!0,new A.aoe(o),d,!0,t.z)
@@ -23340,7 +23340,7 @@ var $async$aof=A.a1(function(d,e){if(d===1)return A.Y(e,r)
 while(true)switch(s){case 0:q=t.O
 p=A.aC(["Content-Type","application/json"],q,q)
 s=2
-return A.W(A.ao9("/api/products/:id",B.ag.rJ(A.aC(["name",a,"size",b],q,q),null),p),$async$aof)
+return A.W(A.ao9(":8080/api/products",B.ag.rJ(A.aC(["name",a,"size",b],q,q),null),p),$async$aof)
 case 2:o=e
 A.mo(A.mk(o.e).c.a.h(0,"charset")).bU(0,o.w)
 if(o.b===200)A.arY(B.E,!0,new A.aog(o),c,!0,t.z)
@@ -78531,7 +78531,7 @@ A.SP.prototype={
 u7(){var s=0,r=A.a0(t.Mh),q,p,o,n,m,l,k,j
 var $async$u7=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=3
-return A.W(A.arG("http://localhost:8080/api/customers"),$async$u7)
+return A.W(A.arG(":8080/api/customers"),$async$u7)
 case 3:l=b
 k=B.ag.bU(0,A.mo(A.mk(l.e).c.a.h(0,"charset")).bU(0,l.w))
 j=A.b([],t.oz)
@@ -78701,7 +78701,7 @@ A.SQ.prototype={
 u8(){var s=0,r=A.a0(t.Bm),q,p,o,n,m,l,k,j
 var $async$u8=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=3
-return A.W(A.arG("http://localhost:8080/api/orders"),$async$u8)
+return A.W(A.arG(":8080/api/orders"),$async$u8)
 case 3:l=b
 k=B.ag.bU(0,A.mo(A.mk(l.e).c.a.h(0,"charset")).bU(0,l.w))
 j=A.b([],t.p6)
