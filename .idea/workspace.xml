@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Created Application structure">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebSecurityConfig.java" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports">
+      <change afterPath="$PROJECT_DIR$/src/system.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/assets/NOTICES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/flutter_service_worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/flutter_service_worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/customers/get_customers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/customers/get_customers.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/orders/create_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/create_orders.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/orders/delete_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/delete_orders.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/orders/get_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/get_orders.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/routes.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/CoffeeShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/CoffeeShopApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,21 +65,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29162833" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\sql" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\src" />
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Spring Boot.CoffeeShopApplication">
     <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/server">
       <envs pass-parent-envs="false">
         <env name="PATH" value="C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files\\Oculus\\ Support\\oculus-runtime;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\ \;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\node.exe;C:\\ProgramData\\chocolatey\\bin;C :\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk-17.0.2\\bin;C:\\Program Files\\Java\\jdk-17.0.2;C:\\Program Files\\apache-maven -3.8.4-bin\\apache-maven-3.8.4\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Serv er\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Users\\cecho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\cecho\\AppData \\Roaming\\npm;C:\\Program Files (x86)\\heroku\\bin;C:\\Program Files\\apache-maven-3.8.4\\bin;C:\\Users\\cecho\\AppData\\Local\\Prog rams\\Microsoft VS Code\\bin;C:\\Users\\cecho\\.dotnet\\tools;C:\\Users\\cecho\\AppData\\Local\\gitkraken\\bin;C:\\Users\\cecho\\.dot net\\tools;C:\\Users\\cecho\\AppData\\Local\\Android\\Sdk\\platform-tools;" />
@@ -142,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656884255311</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports">
+      <created>1657026536103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657026536103</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +181,8 @@
     <MESSAGE value="Updated pom.xml" />
     <MESSAGE value="Added system.properties" />
     <MESSAGE value="updated spring boot applcation port" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated spring boot applcation port" />
+    <MESSAGE value="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
