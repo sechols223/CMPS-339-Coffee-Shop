@@ -1,1 +1,1 @@
-web: java -jar target/CoffeeShop-0.0.1-SNAPSHOT.jar
+api: java -jar target/CoffeeShop-0.0.1-SNAPSHOT.jar
