@@ -79031,7 +79031,7 @@ A.SR.prototype={
 u9(){var s=0,r=A.a0(t.VU),q,p,o,n,m,l,k,j
 var $async$u9=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=3
-return A.W(A.arG("http://localhost:8080/api/products"),$async$u9)
+return A.W(A.arG(":8080/api/products"),$async$u9)
 case 3:l=b
 k=B.ag.bU(0,A.mo(A.mk(l.e).c.a.h(0,"charset")).bU(0,l.w))
 j=A.b([],t.Bx)

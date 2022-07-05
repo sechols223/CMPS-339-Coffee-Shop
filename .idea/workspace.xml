@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Added system.properties">
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="fixed port bindings in server">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/flutter_service_worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/flutter_service_worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/main.dart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/customers/get_customers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/customers/get_customers.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/orders/create_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/create_orders.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/orders/delete_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/delete_orders.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/orders/get_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/get_orders.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/orders/update_orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/update_orders.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/products/create_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/create_products.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/products/delete_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/delete_products.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/products/get_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/get_products.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657032107945</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed port bindings in server">
+      <created>1657032568301</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032568302</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +232,8 @@
     <MESSAGE value="Fixed Java Runtime Version and recompiled with JRE 18" />
     <MESSAGE value="Fixed JRE version in pom.xml" />
     <MESSAGE value="Added system.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added system.properties" />
+    <MESSAGE value="fixed port bindings in server" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed port bindings in server" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
