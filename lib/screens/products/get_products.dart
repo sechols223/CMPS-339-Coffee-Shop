@@ -20,7 +20,8 @@ class _GetAllProductsState extends State<GetAllProducts> {
   var products = List<ProductModel>.generate(200, (index) => null);
 
   Future<List<ProductModel>> getAllProducts() async {
-    var data = await http.get(':8080/api/products');
+    var data = await http.get(
+        'https://coffeeshop-staging.herokuapp.com/api/products');
     var jsonData = json.decode(data.body);
 
     List<ProductModel> product = [];
