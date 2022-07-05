@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="changed process type to api">
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="updated system.properties">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +19,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Samuel Echols &lt;samuel.echols@selu.edu&gt;" />
@@ -211,7 +214,28 @@
       <option name="project" value="LOCAL" />
       <updated>1657034907905</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixing backend table references">
+      <created>1657035535952</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657035535953</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixing backend table references">
+      <created>1657035680126</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657035680126</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated system.properties">
+      <created>1657036965011</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657036965011</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +268,9 @@
     <MESSAGE value="fixed port bindings in server" />
     <MESSAGE value="doing a bit of testing between front end and back end" />
     <MESSAGE value="changed process type to api" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed process type to api" />
+    <MESSAGE value="Fixing backend table references" />
+    <MESSAGE value="updated system.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated system.properties" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
