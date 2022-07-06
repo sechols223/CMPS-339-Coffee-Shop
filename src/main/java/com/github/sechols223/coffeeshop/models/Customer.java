@@ -1,4 +1,4 @@
-package com.githib.sechols223.coffeeshop.models;
+package com.github.sechols223.coffeeshop.models;
 
 import org.springframework.data.relational.core.mapping.Table;
 

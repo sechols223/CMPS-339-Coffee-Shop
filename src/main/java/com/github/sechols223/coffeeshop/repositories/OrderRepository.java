@@ -1,7 +1,6 @@
-package com.githib.sechols223.coffeeshop.repositories;
+package com.github.sechols223.coffeeshop.repositories;
 
-import com.githib.sechols223.coffeeshop.models.Customer;
-import com.githib.sechols223.coffeeshop.models.Order;
+import com.github.sechols223.coffeeshop.models.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

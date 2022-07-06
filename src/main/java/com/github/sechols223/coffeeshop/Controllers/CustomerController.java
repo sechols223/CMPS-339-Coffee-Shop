@@ -1,9 +1,8 @@
-package com.githib.sechols223.coffeeshop.Controllers;
+package com.github.sechols223.coffeeshop.Controllers;
 
 
-import com.githib.sechols223.coffeeshop.models.Customer;
-import com.githib.sechols223.coffeeshop.repositories.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.github.sechols223.coffeeshop.models.Customer;
+import com.github.sechols223.coffeeshop.repositories.CustomerRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +14,12 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class CustomerController {
-    @Autowired
-    CustomerRepository customerRepository;
+
+    private final CustomerRepository customerRepository;
+
+    public CustomerController(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
 
     @GetMapping("/customers")
     public ResponseEntity<List<Customer>> getAllCustomers() {

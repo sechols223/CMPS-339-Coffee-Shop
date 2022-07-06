@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="updated flutter build">
+      <change afterPath="$PROJECT_DIR$/sql/capit.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/auth/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/CustomerControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/OrderControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/dummy data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/dummy data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/CoffeeShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/CoffeeShopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/Controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/Controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/Controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebMvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/web/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/githib/sechols223/coffeeshop/CoffeeShopApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,6 +60,11 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="7ff01966-82c5-445c-9ea3-455f1c65cb1a" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="CustomerControllerTest" />
+    </enabled-run-configurations>
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -58,6 +84,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
   <component name="ProjectId" id="2ALyNxXgIFlHFHBAtmQucxCoBhh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,23 +96,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.29162833" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -95,7 +111,29 @@
       <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CoffeeShopApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CustomerControllerTest">
+    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.sechols223.coffeeshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.sechols223.coffeeshop" />
+      <option name="MAIN_CLASS_NAME" value="com.github.sechols223.coffeeshop.CustomerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/server">
       <envs pass-parent-envs="false">
         <env name="PATH" value="C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files\\Oculus\\ Support\\oculus-runtime;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\ \;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\node.exe;C:\\ProgramData\\chocolatey\\bin;C :\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk-17.0.2\\bin;C:\\Program Files\\Java\\jdk-17.0.2;C:\\Program Files\\apache-maven -3.8.4-bin\\apache-maven-3.8.4\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Serv er\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Users\\cecho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\cecho\\AppData \\Roaming\\npm;C:\\Program Files (x86)\\heroku\\bin;C:\\Program Files\\apache-maven-3.8.4\\bin;C:\\Users\\cecho\\AppData\\Local\\Prog rams\\Microsoft VS Code\\bin;C:\\Users\\cecho\\.dotnet\\tools;C:\\Users\\cecho\\AppData\\Local\\gitkraken\\bin;C:\\Users\\cecho\\.dot net\\tools;C:\\Users\\cecho\\AppData\\Local\\Android\\Sdk\\platform-tools;" />
@@ -104,7 +142,19 @@
     </configuration>
     <configuration name="CoffeeShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="CoffeeShop" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.githib.sechols223.coffeeshop.CoffeeShopApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.sechols223.coffeeshop.CoffeeShopApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,7 +162,13 @@
     <list>
       <item itemvalue="Node.js.app.js" />
       <item itemvalue="Spring Boot.CoffeeShopApplication" />
+      <item itemvalue="JUnit.CustomerControllerTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomerControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,6 +184,7 @@
       <workItem from="1656426795296" duration="164000" />
       <workItem from="1656514279805" duration="41000" />
       <workItem from="1656882982515" duration="1841000" />
+      <workItem from="1657120544128" duration="8243000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pom.xml">
       <created>1656883302149</created>
@@ -234,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657036965011</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="updated flutter build">
+      <created>1657070680668</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657070680668</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +333,8 @@
     <MESSAGE value="changed process type to api" />
     <MESSAGE value="Fixing backend table references" />
     <MESSAGE value="updated system.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated system.properties" />
+    <MESSAGE value="updated flutter build" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated flutter build" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

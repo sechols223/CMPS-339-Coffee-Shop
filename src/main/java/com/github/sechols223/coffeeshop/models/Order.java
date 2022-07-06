@@ -1,6 +1,8 @@
-package com.githib.sechols223.coffeeshop.models;
+package com.github.sechols223.coffeeshop.models;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.time.Instant;
 
 @SuppressWarnings("unused")
 @Entity
@@ -29,6 +31,9 @@ public class Order {
     @Column(name = "productid", insertable = false, updatable = false)
     private int productid;
 
+    @Column(name = "order_date")
+    private Timestamp orderDate;
+
     public Order() {
     }
 
@@ -39,6 +44,7 @@ public class Order {
 
         this.customerid = customer.getId();
         this.productid = product.getId();
+        this.orderDate = Timestamp.from(Instant.now());
     }
 
     public int getCustomerid() {

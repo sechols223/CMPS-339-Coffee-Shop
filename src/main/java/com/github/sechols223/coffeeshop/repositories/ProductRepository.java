@@ -1,6 +1,6 @@
-package com.githib.sechols223.coffeeshop.repositories;
+package com.github.sechols223.coffeeshop.repositories;
 
-import com.githib.sechols223.coffeeshop.models.Product;
+import com.github.sechols223.coffeeshop.models.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
