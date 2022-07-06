@@ -1,4 +1,6 @@
 language: java
 sudo: true
-os: windows
 jdk: oraclejdk18
+script: mvn -B package --file pom.xml
+
+
