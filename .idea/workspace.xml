@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="updated system.properties">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebMvcConfig.java" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="fixed server config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657036965011</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed some API URLs">
+      <created>1657067086991</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657067086991</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed server config">
+      <created>1657067280223</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657067280223</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +282,9 @@
     <MESSAGE value="changed process type to api" />
     <MESSAGE value="Fixing backend table references" />
     <MESSAGE value="updated system.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated system.properties" />
+    <MESSAGE value="fixed some API URLs" />
+    <MESSAGE value="fixed server config" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed server config" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

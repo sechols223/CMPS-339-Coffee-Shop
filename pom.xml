@@ -80,7 +80,21 @@
                     <target>18</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.3</version>
+                <configuration>
+                    <appName>coffeeshop-staging</appName>
+                    <processTypes>
+                        <web>java -jar
+                            -Dspring.datasource.url=jdbc:postgresql://ec2-52-73-184-24.compute-1.amazonaws.com:5432/d9ekobl11s09bv
+                            target/CoffeeShop-0.0.1-SNAPSHOT.jar
+                        </web>
+                    </processTypes>
+                    <jdkVersion>18</jdkVersion>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 </project>
