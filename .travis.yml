@@ -1,4 +1,5 @@
 language: java
 sudo: true
 jdk: oraclejdk18
+before_install: chmod +x mvnw
 script: mvn -B package --file pom.xml
