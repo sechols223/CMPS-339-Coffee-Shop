@@ -2,5 +2,3 @@ language: java
 sudo: true
 jdk: oraclejdk18
 script: mvn -B package --file pom.xml
-
-

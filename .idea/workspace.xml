@@ -159,9 +159,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CustomerControllerTest" />
       <item itemvalue="Node.js.app.js" />
       <item itemvalue="Spring Boot.CoffeeShopApplication" />
-      <item itemvalue="JUnit.CustomerControllerTest" />
     </list>
     <recent_temporary>
       <list>
