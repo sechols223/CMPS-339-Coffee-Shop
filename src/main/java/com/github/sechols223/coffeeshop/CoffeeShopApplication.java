@@ -1,4 +1,4 @@
-package com.githib.sechols223.coffeeshop;
+package com.github.sechols223.coffeeshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.githib.sechols223.coffeeshop.web;
+package com.github.sechols223.coffeeshop.web;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

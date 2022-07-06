@@ -1,7 +1,5 @@
-language: node_js
-
-node_js:
-  - 16
-
-before_install:
-  - npm i -g npm@8
+language: java
+sudo: true
+jdk: oraclejdk18
+before_install: chmod +x mvnw
+script: mvn -B package --file pom.xml

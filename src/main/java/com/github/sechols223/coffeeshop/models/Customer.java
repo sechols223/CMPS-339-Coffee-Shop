@@ -1,4 +1,4 @@
-package com.githib.sechols223.coffeeshop.models;
+package com.github.sechols223.coffeeshop.models;
 
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -7,9 +7,8 @@ import java.util.Set;
 
 @SuppressWarnings("unused")
 @Entity
-@Table(name = "Customer")
+@Table(name = "\"customer\"")
 public class Customer {
-
     @Id
     @GeneratedValue
     @Column(name="id")

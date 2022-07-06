@@ -1,8 +1,7 @@
-package com.githib.sechols223.coffeeshop.Controllers;
+package com.github.sechols223.coffeeshop.Controllers;
 
-import com.githib.sechols223.coffeeshop.models.Product;
-import com.githib.sechols223.coffeeshop.repositories.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.github.sechols223.coffeeshop.models.Product;
+import com.github.sechols223.coffeeshop.repositories.ProductRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,15 +14,17 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class ProductController {
 
-    @Autowired
-    ProductRepository productRepository;
+    private final ProductRepository productRepository;
+
+    public ProductController(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getProducts() {
         try {
-            List<Product> products = new ArrayList<>();
 
-            productRepository.findAll().forEach(products::add);
+            List<Product> products = new ArrayList<>(productRepository.findAll());
             return new ResponseEntity<>(products, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -70,8 +71,9 @@ public class ProductController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
     @DeleteMapping("/products/{id}")
-    public ResponseEntity<Product> deleteProduct(@RequestParam("id") int id) {
+    public ResponseEntity<Product> deleteProduct(@PathVariable("id") int id) {
         try {
             productRepository.deleteById(id);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);

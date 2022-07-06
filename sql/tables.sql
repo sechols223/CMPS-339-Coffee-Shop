@@ -26,8 +26,8 @@ $do$
             ProductId  serial  NOT NULL,
             Amount     integer NOT NULL,
             PRIMARY KEY (id),
-            FOREIGN KEY (ProductId) REFERENCES "Product" (id),
-            FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
+            FOREIGN KEY (ProductId) REFERENCES "product" (id),
+            FOREIGN KEY (CustomerId) REFERENCES "customer" (id)
         );
 
         CREATE TABLE IF NOT EXISTS "user"
@@ -37,24 +37,32 @@ $do$
             Username VARCHAR NOT NULL,
             "Password" VARCHAR NOT NULL,
             PRIMARY KEY (id),
-            FOREIGN KEY (CustomerId) REFERENCES "Customer" (id)
+            FOREIGN KEY (CustomerId) REFERENCES "customer" (id)
         );
 
         CREATE TABLE IF NOT EXISTS "session"
         (
-            sid serial,
-            UserId serial NOT NULL,
-            Expires date NOT NULL,
-            Data varchar
+            sid     serial,
+            UserId  serial NOT NULL,
+            Expires date   NOT NULL,
+            Data    varchar
         );
 
-        ALTER TABLE "Order" ADD COLUMN IF NOT EXISTS ShippingAddress varchar;
-
-        ALTER TABLE "Session" ADD FOREIGN KEY  (UserId)
-            REFERENCES "User" (id);
-        ALTER TABLE "Session" ADD PRIMARY KEY (sid);
-        ALTER TABLE "Session" ALTER COLUMN "sid" TYPE varchar;
-
+        ALTER TABLE "order"
+            ADD COLUMN IF NOT EXISTS ShippingAddress varchar;
+        ALTER TABLE "product"
+            ADD COLUMN IF NOT EXISTS Price varchar;
+        ALTER TABLE "session"
+            ADD FOREIGN KEY (UserId)
+                REFERENCES "user" (id);
+        ALTER TABLE "session"
+            ADD PRIMARY KEY (sid);
+        ALTER TABLE "session"
+            ALTER COLUMN "sid" TYPE varchar;
+        ALTER TABLE "order"
+            ADD COLUMN IF NOT EXISTS Order_Date TIMESTAMP;
 
     END
-$do$
+$do$;
+
+

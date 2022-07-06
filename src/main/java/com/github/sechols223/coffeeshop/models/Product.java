@@ -1,9 +1,9 @@
-package com.githib.sechols223.coffeeshop.models;
+package com.github.sechols223.coffeeshop.models;
 
 
 import javax.persistence.*;
-import java.util.Set;
 
+@SuppressWarnings({"unused", "unassigned"})
 @Entity
 @Table(name="product")
 public class Product {
@@ -16,9 +16,6 @@ public class Product {
     private String name;
     @Column(name="size")
     private String size;
-
-    @OneToMany(mappedBy = "id")
-    private Set<Product> products;
 
     public Product() {}
 

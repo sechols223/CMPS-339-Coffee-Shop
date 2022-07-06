@@ -1,12 +1,11 @@
-package com.githib.sechols223.coffeeshop.Controllers;
+package com.github.sechols223.coffeeshop.Controllers;
 
-import com.githib.sechols223.coffeeshop.models.Customer;
-import com.githib.sechols223.coffeeshop.models.Order;
-import com.githib.sechols223.coffeeshop.models.Product;
-import com.githib.sechols223.coffeeshop.repositories.CustomerRepository;
-import com.githib.sechols223.coffeeshop.repositories.OrderRepository;
-import com.githib.sechols223.coffeeshop.repositories.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.github.sechols223.coffeeshop.models.Customer;
+import com.github.sechols223.coffeeshop.models.Order;
+import com.github.sechols223.coffeeshop.models.Product;
+import com.github.sechols223.coffeeshop.repositories.CustomerRepository;
+import com.github.sechols223.coffeeshop.repositories.OrderRepository;
+import com.github.sechols223.coffeeshop.repositories.ProductRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,19 +18,25 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class OrderController {
 
-    @Autowired
-    private CustomerRepository customerRepository;
-    @Autowired
-    private OrderRepository orderRepository;
-    @Autowired
-    private ProductRepository productRepository;
+
+    private final CustomerRepository customerRepository;
+    private final OrderRepository orderRepository;
+    private final ProductRepository productRepository;
+
+    public OrderController(CustomerRepository customerRepository,
+                           OrderRepository orderRepository,
+                           ProductRepository productRepository) {
+
+        this.customerRepository = customerRepository;
+        this.orderRepository = orderRepository;
+        this.productRepository = productRepository;
+    }
 
     @GetMapping("/orders")
     public ResponseEntity<List<Order>> getAllOrders() {
         try {
-            List<Order> orders = new ArrayList<>();
 
-            orderRepository.findAll().forEach(orders::add);
+            List<Order> orders = new ArrayList<>(orderRepository.findAll());
             return new ResponseEntity<>(orders, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -42,11 +47,10 @@ public class OrderController {
     @GetMapping("/orders/{customerid}")
     public ResponseEntity<List<Order>> getCustomerOrders(@PathVariable("customerid") int customerid ) {
         Optional<Customer> customerData = customerRepository.findById(customerid);
-        List<Order> orders = new ArrayList<>();
 
         if (customerData.isPresent()) {
 
-            orderRepository.findByCustomerId(customerid).forEach(orders::add);
+            List<Order> orders = new ArrayList<>(orderRepository.findByCustomerId(customerid));
             return new ResponseEntity<>(orders, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -84,10 +88,9 @@ public class OrderController {
                     @PathVariable("orderid") int orderid) {
 
         Optional<Customer> customerData = customerRepository.findById(customerid);
-        List<Order> orders = new ArrayList<>();
 
         if (customerData.isPresent()) {
-            orderRepository.findByCustomerId(customerid).forEach(orders::add);
+            List<Order> orders = new ArrayList<>(orderRepository.findByCustomerId(customerid));
 
             for (Order order : orders) {
                 if (order.getId() == orderid) {
