@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Created Application structure">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219/storage_v2/_src_/database/d9ekobl11s09bv.0rOflQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Added chmod to travis config">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c01070ec-81d6-4971-96c3-c44002755219.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/products/create_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/create_products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/products/delete_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/delete_products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/products/get_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/products/get_products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +18,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Samuel Echols &lt;samuel.echols@selu.edu&gt;" />
@@ -47,36 +31,88 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="samuel" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="7ff01966-82c5-445c-9ea3-455f1c65cb1a" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2ALyNxXgIFlHFHBAtmQucxCoBhh" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cecho/DataGripProjects/CMPS-339-Coffee-Shop/sql&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29162833" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\sql" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\" />
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\src" />
+      <recent name="C:\Users\cecho\DataGripProjects\CMPS-339-Coffee-Shop\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.CoffeeShopApplication">
     <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/server">
       <envs pass-parent-envs="false">
         <env name="PATH" value="C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files\\Oculus\\ Support\\oculus-runtime;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\ \;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\node.exe;C:\\ProgramData\\chocolatey\\bin;C :\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk-17.0.2\\bin;C:\\Program Files\\Java\\jdk-17.0.2;C:\\Program Files\\apache-maven -3.8.4-bin\\apache-maven-3.8.4\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Serv er\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Users\\cecho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\cecho\\AppData \\Roaming\\npm;C:\\Program Files (x86)\\heroku\\bin;C:\\Program Files\\apache-maven-3.8.4\\bin;C:\\Users\\cecho\\AppData\\Local\\Prog rams\\Microsoft VS Code\\bin;C:\\Users\\cecho\\.dotnet\\tools;C:\\Users\\cecho\\AppData\\Local\\gitkraken\\bin;C:\\Users\\cecho\\.dot net\\tools;C:\\Users\\cecho\\AppData\\Local\\Android\\Sdk\\platform-tools;" />
       </envs>
       <method v="2" />
     </configuration>
+    <configuration name="CoffeeShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CoffeeShop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.githib.sechols223.coffeeshop.CoffeeShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Spring Boot.CoffeeShopApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +124,117 @@
       <updated>1655422399124</updated>
       <workItem from="1655422400626" duration="6939000" />
       <workItem from="1655502039177" duration="489000" />
+      <workItem from="1656384162309" duration="726000" />
+      <workItem from="1656426795296" duration="164000" />
+      <workItem from="1656514279805" duration="41000" />
+      <workItem from="1656882982515" duration="1841000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated pom.xml">
+      <created>1656883302149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656883302149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added system.properties">
+      <created>1656883709625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656883709625</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated spring boot applcation port">
+      <created>1656884255311</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656884255311</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports">
+      <created>1657026536103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657026536103</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed Java Runtime Version and recompiled with JRE 18">
+      <created>1657031150406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657031150406</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed JRE version in pom.xml">
+      <created>1657031233682</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657031233682</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed JRE version in pom.xml">
+      <created>1657031553953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657031553953</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed JRE version in pom.xml">
+      <created>1657031952858</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657031952858</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added system.properties">
+      <created>1657032107945</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032107945</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed port bindings in server">
+      <created>1657032568301</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032568302</updated>
+    </task>
+    <task id="LOCAL-00011" summary="doing a bit of testing between front end and back end">
+      <created>1657034299301</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657034299301</updated>
+    </task>
+    <task id="LOCAL-00012" summary="changed process type to api">
+      <created>1657034907905</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657034907905</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixing backend table references">
+      <created>1657035535952</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657035535953</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixing backend table references">
+      <created>1657035680126</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657035680126</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated system.properties">
+      <created>1657036965011</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657036965011</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,12 +250,31 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="Created Customer, Product, and Order tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Customer, Product, and Order tables" />
+    <MESSAGE value="Updated pom.xml" />
+    <MESSAGE value="updated spring boot applcation port" />
+    <MESSAGE value="Added CORS headers so the frontend can make API Requests to the backend while running on the same server but different ports" />
+    <MESSAGE value="Fixed Java Runtime Version and recompiled with JRE 18" />
+    <MESSAGE value="Fixed JRE version in pom.xml" />
+    <MESSAGE value="Added system.properties" />
+    <MESSAGE value="fixed port bindings in server" />
+    <MESSAGE value="doing a bit of testing between front end and back end" />
+    <MESSAGE value="changed process type to api" />
+    <MESSAGE value="Fixing backend table references" />
+    <MESSAGE value="updated system.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated system.properties" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
