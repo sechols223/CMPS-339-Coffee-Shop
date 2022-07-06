@@ -19,7 +19,8 @@ class _GetAllCustomersState extends State<GetAllCustomers> {
 
   Future<List<CustomerModel>> getAllCustomers() async {
     var data = await http
-        .get(':8080/api/customers'); //spring boot for getting all customers
+        .get(
+        'https://coffeeshop-staging.herokuapp.com/api/customers'); //spring boot for getting all customers
     var jsonData = json.decode(data.body);
 
     List<CustomerModel> customer = [];

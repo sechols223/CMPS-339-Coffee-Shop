@@ -23,7 +23,8 @@ class _GetAllOrdersState extends State<GetAllOrders> {
 
   Future<List<OrderModel>> getAllOrders() async {
     var data =
-    await http.get(':8080/api/orders'); //spring boot for getting all orders
+    await http.get(
+        'https://coffeeshop-staging.herokuapp.com/api/orders'); //spring boot for getting all orders
     var jsonData = json.decode(data.body);
 
     List<OrderModel> order = [];

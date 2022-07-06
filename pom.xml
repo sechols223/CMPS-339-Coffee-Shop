@@ -54,6 +54,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.moesif.servlet</groupId>
+            <artifactId>moesif-servlet</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.21</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -68,6 +78,21 @@
                 <configuration>
                     <source>18</source>
                     <target>18</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.3</version>
+                <configuration>
+                    <appName>coffeeshop-staging</appName>
+                    <processTypes>
+                        <web>java -jar
+                            -Dspring.datasource.url=jdbc:postgresql://ec2-52-73-184-24.compute-1.amazonaws.com:5432/d9ekobl11s09bv
+                            target/CoffeeShop-0.0.1-SNAPSHOT.jar
+                        </web>
+                    </processTypes>
+                    <jdkVersion>18</jdkVersion>
                 </configuration>
             </plugin>
         </plugins>
