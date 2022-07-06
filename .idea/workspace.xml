@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="updated flutter build">
-      <change afterPath="$PROJECT_DIR$/sql/capit.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/auth/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/CustomerControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/OrderControllerTest.java" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="updated travis.yml to reflect spring boot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/dummy data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/dummy data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/CoffeeShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/CoffeeShopApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/Controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/Controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/Controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebMvcConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githib/sechols223/coffeeshop/web/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sechols223/coffeeshop/web/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/githib/sechols223/coffeeshop/CoffeeShopApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/CustomerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/CustomerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +37,31 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="7ff01966-82c5-445c-9ea3-455f1c65cb1a" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e5365310-c534-4dfa-a142-cc0d3d8f63b3" />
+        <option name="url" value="https://github.com/sechols223/CMPS-339-Coffee-Shop.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="JavaAutoRunManager">
     <enabled-run-configurations>
@@ -85,7 +88,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="2" />
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2ALyNxXgIFlHFHBAtmQucxCoBhh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -98,6 +101,7 @@
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -184,7 +188,7 @@
       <workItem from="1656426795296" duration="164000" />
       <workItem from="1656514279805" duration="41000" />
       <workItem from="1656882982515" duration="1841000" />
-      <workItem from="1657120544128" duration="8243000" />
+      <workItem from="1657120544128" duration="9520000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pom.xml">
       <created>1656883302149</created>
@@ -298,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657070680668</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Started creating unit tests">
+      <created>1657148305192</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657148305192</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +345,10 @@
     <MESSAGE value="Fixing backend table references" />
     <MESSAGE value="updated system.properties" />
     <MESSAGE value="updated flutter build" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated flutter build" />
+    <MESSAGE value="Started creating unit tests" />
+    <MESSAGE value="updated travis.yml to reflect spring boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated travis.yml to reflect spring boot" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
