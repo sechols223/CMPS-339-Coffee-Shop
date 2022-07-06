@@ -1,3 +1,4 @@
 language: java
 sudo: true
+os: windows
 jdk: oraclejdk18

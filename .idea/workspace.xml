@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="updated travis.yml to reflect spring boot">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="added sudo to travis to see if that fixes permissions error">
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/CustomerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/sechols223/coffeeshop/CustomerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,9 +84,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2ALyNxXgIFlHFHBAtmQucxCoBhh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -188,7 +183,7 @@
       <workItem from="1656426795296" duration="164000" />
       <workItem from="1656514279805" duration="41000" />
       <workItem from="1656882982515" duration="1841000" />
-      <workItem from="1657120544128" duration="9520000" />
+      <workItem from="1657120544128" duration="9852000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pom.xml">
       <created>1656883302149</created>
@@ -309,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657148305192</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="updated travis.yml to reflect spring boot">
+      <created>1657149336283</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657149336283</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +349,8 @@
     <MESSAGE value="updated flutter build" />
     <MESSAGE value="Started creating unit tests" />
     <MESSAGE value="updated travis.yml to reflect spring boot" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated travis.yml to reflect spring boot" />
+    <MESSAGE value="added sudo to travis to see if that fixes permissions error" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sudo to travis to see if that fixes permissions error" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
