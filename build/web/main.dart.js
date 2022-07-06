@@ -78531,7 +78531,7 @@ A.SP.prototype={
 u7(){var s=0,r=A.a0(t.Mh),q,p,o,n,m,l,k,j
 var $async$u7=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=3
-return A.W(A.arG(":8080/api/customers"),$async$u7)
+return A.W(A.arG("https://coffeeshop-staging.herokuapp.com/api/customers"),$async$u7)
 case 3:l=b
 k=B.ag.bU(0,A.mo(A.mk(l.e).c.a.h(0,"charset")).bU(0,l.w))
 j=A.b([],t.oz)
@@ -78701,7 +78701,7 @@ A.SQ.prototype={
 u8(){var s=0,r=A.a0(t.Bm),q,p,o,n,m,l,k,j
 var $async$u8=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=3
-return A.W(A.arG(":8080/api/orders"),$async$u8)
+return A.W(A.arG("https://coffeeshop-staging.herokuapp.com/api/orders"),$async$u8)
 case 3:l=b
 k=B.ag.bU(0,A.mo(A.mk(l.e).c.a.h(0,"charset")).bU(0,l.w))
 j=A.b([],t.p6)
@@ -79031,7 +79031,7 @@ A.SR.prototype={
 u9(){var s=0,r=A.a0(t.VU),q,p,o,n,m,l,k,j
 var $async$u9=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=3
-return A.W(A.arG(":8080/api/products"),$async$u9)
+return A.W(A.arG("https://coffeeshop-staging.herokuapp.com/api/products"),$async$u9)
 case 3:l=b
 k=B.ag.bU(0,A.mo(A.mk(l.e).c.a.h(0,"charset")).bU(0,l.w))
 j=A.b([],t.Bx)
