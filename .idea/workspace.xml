@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="Added Maven build script to travis config">
+    <list default="true" id="6b700369-b2b5-46a5-9f17-b90bfa19bf15" name="Changes" comment="added sudo to travis to see if that fixes permissions error">
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +183,7 @@
       <workItem from="1656426795296" duration="164000" />
       <workItem from="1656514279805" duration="41000" />
       <workItem from="1656882982515" duration="1841000" />
-      <workItem from="1657120544128" duration="10508000" />
+      <workItem from="1657120544128" duration="9852000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pom.xml">
       <created>1656883302149</created>
@@ -311,28 +311,7 @@
       <option name="project" value="LOCAL" />
       <updated>1657149336283</updated>
     </task>
-    <task id="LOCAL-00019" summary="added sudo to travis to see if that fixes permissions error">
-      <created>1657149680580</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1657149680580</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Changed travis os to windows">
-      <created>1657149852782</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1657149852782</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Added Maven build script to travis config">
-      <created>1657150085113</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1657150085113</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,9 +350,7 @@
     <MESSAGE value="Started creating unit tests" />
     <MESSAGE value="updated travis.yml to reflect spring boot" />
     <MESSAGE value="added sudo to travis to see if that fixes permissions error" />
-    <MESSAGE value="Changed travis os to windows" />
-    <MESSAGE value="Added Maven build script to travis config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Maven build script to travis config" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sudo to travis to see if that fixes permissions error" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
