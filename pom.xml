@@ -8,7 +8,7 @@
         <version>2.7.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.githib.sechols223</groupId>
+    <groupId>com.github.sechols223</groupId>
     <artifactId>CoffeeShop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>CoffeeShop</name>
