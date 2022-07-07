@@ -17,6 +17,7 @@ target
 .idea/
 .idea/workspace.xml
 .vscode
+node_modules
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
@@ -31,7 +32,6 @@ target
 .packages
 .pub-cache/
 .pub/
-android
 App Preview
 
 
@@ -43,7 +43,8 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
-
+.env
+,vn
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
@@ -54,7 +55,6 @@ app.*.map.json
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 HELP.md

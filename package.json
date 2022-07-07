@@ -8,10 +8,9 @@
     "node": "16.x"
   },
   "scripts": {
-    "build": "npm run",
-    "run": "cd client && npm install && npm run build",
+    "build": "npm run server",
     "heroku-postbuild": "npm install && npm run build",
-    "server": "nodemon"
+    "server": "npm install && nodemon"
   },
   "author": "",
   "license": "ISC",

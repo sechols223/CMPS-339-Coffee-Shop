@@ -8,14 +8,15 @@
                     "ca": ""
                 }
             },
-            "previewLimit": 50,
-            "server": "ec2-52-73-184-24.compute-1.amazonaws.com",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "Heroku",
-            "database": "d9ekobl11s09bv",
-            "username": "hbcjvutooedpfp",
-            "password": "b4d36443757f6858ee61655fd199d0381d73b19b513576fd665cbf9c7fe2f720"
+          "previewLimit": 50,
+          "server": "ec2-52-73-184-24.compute-1.amazonaws.com",
+          "port": 5432,
+          "driver": "PostgreSQL",
+          "name": "Heroku",
+          "database": "d9ekobl11s09bv",
+          "username": "hbcjvutooedpfp",
+          "password": "b4d36443757f6858ee61655fd199d0381d73b19b513576fd665cbf9c7fe2f720"
         }
-    ]
+    ],
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
