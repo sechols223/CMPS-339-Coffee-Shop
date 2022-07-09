@@ -1,7 +1,16 @@
 # Coffee Shop
 
-A new collab project.
+A Coffee Shop web application!
 
 # Technologies
- - Spring Boot
- - Flutter
+ - Front End
+   - Flutter
+ - Back End
+   - NodeJS
+     - ExpressJS
+   - Spring Boot
+ - Database
+   - PostgreSQL
+
+# Authors
+ Samuel Echols and Garrett Crawford
