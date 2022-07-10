@@ -14,7 +14,7 @@ class DeleteProduct extends StatefulWidget {
 }
 
 Future<ProductModel> deleteProduct(String name, String size) async {
-  var url = ':8080/products/:id';
+  var url = 'https://coffeeshop-staging.herokuapp.com/api/products/:id';
 
   var response = await http.delete(
     url,

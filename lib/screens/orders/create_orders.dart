@@ -17,7 +17,7 @@ class RegisterOrder extends StatefulWidget {
 Future<OrderModel> registerOrder(
     String customerid, productid, amount, BuildContext context) async {
   var url =
-      'http://localhost:8080/api/orders/:id'; //spring boot for adding on orders
+      'https://coffeeshop-staging.herokuapp.com/api/orders/:id'; //spring boot for adding on orders
   var response = await http.post(url,
       headers: <String, String>{"Content-Type": "application/json"},
       body: jsonEncode(<String, String>{

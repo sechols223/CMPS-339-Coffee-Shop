@@ -16,7 +16,7 @@ class RegisterProduct extends StatefulWidget {
 
 Future<ProductModel> registerProduct(
     String name, size, BuildContext context) async {
-  var url = ':8080/api/products';
+  var url = 'https://coffeeshop-staging.herokuapp.com/api/products';
   var response = await http.post(url,
       headers: <String, String>{"Content-Type": "application/json"},
       body: jsonEncode(<String, String>{"name": name, "size": size}));

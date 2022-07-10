@@ -25,7 +25,7 @@ class _RegisterState extends State<Register> {
     "",
     "",
   );
-  String url = "register url";
+  String url = "https://coffeeshop-staging.herokuapp.com/register";
 
   Future save() async {
     var res = await http.post(url,
