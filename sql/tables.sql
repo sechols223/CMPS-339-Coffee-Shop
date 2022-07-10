@@ -47,6 +47,17 @@ $do$
             Expires date   NOT NULL,
             Data    varchar
         );
+        CREATE TABLE IF NOT EXISTS "user_roles"
+        (
+          id serial NOT NULL,
+          userid serial NOT NULL,
+          roleid serial NOT NULL
+        );
+        CREATE TABLE IF NOT EXISTS "roles"
+        (
+          id serial NOT NULL,
+          name varchar NOT NULL
+        );
 
         ALTER TABLE "order"
             ADD COLUMN IF NOT EXISTS ShippingAddress varchar;
