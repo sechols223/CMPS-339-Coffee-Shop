@@ -5,9 +5,7 @@ import 'dart:convert';
 
 import 'package:flutter_coffee/models/Order_model.dart';
 import 'package:flutter_coffee/screens/orders/delete_orders.dart';
-import 'package:flutter_coffee/screens/App_drawer.dart';
 
-import 'package:flutter_coffee/screens/orders/Order_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -22,8 +20,7 @@ class _GetAllOrdersState extends State<GetAllOrders> {
   var orders = List<OrderModel>.generate(200, (index) => null);
 
   Future<List<OrderModel>> getAllOrders() async {
-    var data =
-    await http.get(
+    var data = await http.get(
         'https://coffeeshop-staging.herokuapp.com/api/orders'); //spring boot for getting all orders
     var jsonData = json.decode(data.body);
 
@@ -44,15 +41,7 @@ class _GetAllOrdersState extends State<GetAllOrders> {
     return Scaffold(
       appBar: AppBar(
         title: Text("All Order Details"),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => AppDrawer()));
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => OrderDrawer()));
-          },
-        ),
+        backgroundColor: Colors.brown,
       ),
       body: Container(
         child: FutureBuilder(
@@ -114,6 +103,7 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(orderModel.customerid.toString()),
+        backgroundColor: Colors.brown,
         actions: <Widget>[],
       ),
       body: Container(

@@ -47,6 +47,7 @@ class _RegisterProductState extends State<RegisterProduct> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Create Product"),
+          backgroundColor: Colors.brown,
         ),
         body: Form(
             child: Padding(

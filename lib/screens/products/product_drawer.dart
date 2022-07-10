@@ -10,37 +10,40 @@ class ProductDrawer extends StatefulWidget {
 }
 
 class _ProductDrawerState extends State<ProductDrawer> {
-  final minimumPadding = 5.0;
+  final minimumPadding = 0.0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Product Management")),
+      appBar: AppBar(
+        title: Text("Product Management"),
+        backgroundColor: Colors.brown,
+      ),
       body: Center(
         child: Text("Products"),
       ),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.only(top: minimumPadding, bottom: minimumPadding),
+          padding: EdgeInsets.only(top: 0, bottom: minimumPadding),
           children: <Widget>[
             DrawerHeader(
-              child: Text("Product Management"),
+              child: Text("Product Options: "),
               decoration: BoxDecoration(
                 color: Colors.brown,
               ),
+            ),
+            ListTile(
+              title: Text("All Products"),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => GetAllProducts()));
+              },
             ),
             ListTile(
               title: Text("Add Product"),
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => RegisterProduct()));
-              },
-            ),
-            ListTile(
-              title: Text("Show Products"),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => GetAllProducts()));
               },
             ),
           ],

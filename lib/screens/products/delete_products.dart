@@ -2,8 +2,8 @@
 import 'dart:convert';
 
 import 'package:flutter_coffee/models/Product_model.dart';
-import 'package:flutter_coffee/screens/products/get_products.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_coffee/screens/products/product_drawer.dart';
 import 'package:http/http.dart' as http;
 
 class DeleteProduct extends StatefulWidget {
@@ -14,7 +14,6 @@ class DeleteProduct extends StatefulWidget {
 }
 
 Future<ProductModel> deleteProduct(String name, String size) async {
-
   var url = ':8080/products/:id';
 
   var response = await http.delete(
@@ -27,6 +26,6 @@ Future<ProductModel> deleteProduct(String name, String size) async {
 class _DeleteProductState extends State<DeleteProduct> {
   @override
   Widget build(BuildContext context) {
-    return GetAllProducts();
+    return ProductDrawer();
   }
 }

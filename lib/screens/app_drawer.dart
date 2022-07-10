@@ -11,21 +11,22 @@ class AppDrawer extends StatefulWidget {
 }
 
 class _AppDrawerState extends State<AppDrawer> {
-  final minimumPadding = 5.0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("App Management")),
+      appBar: AppBar(
+        title: Text("Management"),
+        backgroundColor: Colors.brown,
+      ),
       body: Center(
-        child: Text("Files"),
+        child: Text("Show Items in Database"),
       ),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.only(top: minimumPadding, bottom: minimumPadding),
+          padding: EdgeInsets.only(top: 0, bottom: 0),
           children: <Widget>[
             DrawerHeader(
-              child: Text("App Management"),
+              child: Text("Coffee Shop Database"),
               decoration: BoxDecoration(
                 color: Colors.brown,
               ),

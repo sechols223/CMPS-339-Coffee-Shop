@@ -3,7 +3,6 @@
 */
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:flutter_coffee/coffee_example.dart';
 import 'package:flutter_coffee/models/cart_model.dart';
 import 'package:flutter_coffee/screens/pages/myhomepage.dart';

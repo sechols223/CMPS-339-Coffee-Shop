@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_coffee/screens/login.dart';
+import 'package:flutter_coffee/screens/sign_in.dart';
 import 'package:flutter_coffee/screens/app_drawer.dart';
 import 'package:flutter_coffee/screens/products/product_drawer.dart';
 import 'package:flutter_coffee/screens/pages/myhomepage.dart';
@@ -16,7 +16,7 @@ class _NavBarState extends State<NavBar> {
 
   //list of widgets to call ontap
   final widgetOptions = [
-    new Login(),
+    new SignInScreen(),
     new MyHomePage(),
     new ProductDrawer(),
     new AppDrawer(),

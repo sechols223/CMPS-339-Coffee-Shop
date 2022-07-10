@@ -2,7 +2,6 @@
 //shows all customers in the database in the app
 
 import 'dart:convert';
-import 'package:flutter_coffee/screens/app_drawer.dart';
 import 'package:flutter_coffee/models/Customer_model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -18,8 +17,7 @@ class _GetAllCustomersState extends State<GetAllCustomers> {
   var customers = List<CustomerModel>.generate(200, (index) => null);
 
   Future<List<CustomerModel>> getAllCustomers() async {
-    var data = await http
-        .get(
+    var data = await http.get(
         'https://coffeeshop-staging.herokuapp.com/api/customers'); //spring boot for getting all customers
     var jsonData = json.decode(data.body);
 
@@ -40,13 +38,7 @@ class _GetAllCustomersState extends State<GetAllCustomers> {
     return Scaffold(
       appBar: AppBar(
         title: Text("All Customer Details"),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => AppDrawer()));
-          },
-        ),
+        backgroundColor: Colors.brown,
       ),
       body: Container(
         child: FutureBuilder(
@@ -99,6 +91,7 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(customerModel.firstname.toString()),
+        backgroundColor: Colors.brown,
         actions: <Widget>[],
       ),
       body: Container(

@@ -5,7 +5,6 @@ import 'dart:convert';
 
 import 'package:flutter_coffee/models/Product_model.dart';
 import 'package:flutter_coffee/screens/products/delete_products.dart';
-import 'package:flutter_coffee/screens/products/product_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -20,8 +19,8 @@ class _GetAllProductsState extends State<GetAllProducts> {
   var products = List<ProductModel>.generate(200, (index) => null);
 
   Future<List<ProductModel>> getAllProducts() async {
-    var data = await http.get(
-        'https://coffeeshop-staging.herokuapp.com/api/products');
+    var data =
+        await http.get('https://coffeeshop-staging.herokuapp.com/api/products');
     var jsonData = json.decode(data.body);
 
     List<ProductModel> product = [];
@@ -39,14 +38,8 @@ class _GetAllProductsState extends State<GetAllProducts> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("All products Details"),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => ProductDrawer()));
-          },
-        ),
+        title: Text("Show/Delete Products"),
+        backgroundColor: Colors.brown,
       ),
       body: Container(
         child: FutureBuilder(
@@ -100,6 +93,7 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(productModel.name),
+        backgroundColor: Colors.brown,
         actions: <Widget>[],
       ),
       body: Container(
