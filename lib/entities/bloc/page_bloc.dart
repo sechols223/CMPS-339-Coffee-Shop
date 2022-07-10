@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
-
-import 'package:flutter_coffee/Screens/Sign_in.dart';
 import 'package:flutter_coffee/screens/app_drawer.dart';
+import 'package:flutter_coffee/screens/pages/login.dart';
 import 'package:flutter_coffee/screens/products/product_drawer.dart';
 import 'package:flutter_coffee/screens/pages/myhomepage.dart';
 import 'package:equatable/equatable.dart';
@@ -17,7 +16,7 @@ class PageBloc extends Bloc<PageEvent, PageState> {
     on<ChangePageEvent>((event, emit) {
       switch (event.index) {
         case 0:
-          emit(PageLoaded(SignInScreen()));
+          emit(PageLoaded(Login()));
           break;
         case 1:
           emit(PageLoaded(MyHomePage()));
