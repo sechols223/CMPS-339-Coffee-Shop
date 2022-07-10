@@ -22,7 +22,7 @@ class _SideMenuState extends State<SideMenu> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Colors.brown,
       child: Column(
         children: [
           const SizedBox(height: 30),
@@ -34,7 +34,7 @@ class _SideMenuState extends State<SideMenu> {
                 style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
             ],
           ),
@@ -64,7 +64,7 @@ class _SideMenuState extends State<SideMenu> {
           const SizedBox(height: 20),
           Text(
             "#1 Coffee in",
-            style: TextStyle(color: kGreyColor),
+            style: TextStyle(color: Colors.black, fontSize: 16),
           ),
           const SizedBox(height: 10),
           Text(

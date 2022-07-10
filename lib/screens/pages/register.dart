@@ -77,7 +77,7 @@ class _RegisterState extends State<Register> {
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 50),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.brown.withOpacity(0.5),
+                      color: Colors.brown[400],
                     ),
                     child: Column(
                       children: [

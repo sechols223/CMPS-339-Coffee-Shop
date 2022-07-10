@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const Color kGreyColor = Colors.grey;
+const Color kGreyColor = Colors.black;
 const double kdefaultPadding = 20;
 const Color kWhiteColor = Colors.white;
 Color kLightGreyColor = Colors.grey[500];
