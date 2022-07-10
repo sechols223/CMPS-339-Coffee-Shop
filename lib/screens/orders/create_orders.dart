@@ -51,6 +51,7 @@ class _RegisterOrderState extends State<RegisterOrder> {
     TextStyle textStyle = Theme.of(context).textTheme.subtitle2;
 
     return Scaffold(
+        backgroundColor: Colors.brown[200],
         appBar: AppBar(
           title: Text("Create Order"),
         ),

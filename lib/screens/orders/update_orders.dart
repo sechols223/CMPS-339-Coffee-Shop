@@ -68,6 +68,7 @@ class _UpdateOrderState extends State<UpdateOrder> {
     TextStyle textStyle = Theme.of(context).textTheme.subtitle2;
 
     return Scaffold(
+      backgroundColor: Colors.brown[200],
       appBar: AppBar(
         title: Text("Update Order"),
         leading: IconButton(

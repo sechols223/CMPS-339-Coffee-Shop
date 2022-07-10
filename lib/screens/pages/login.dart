@@ -58,7 +58,7 @@ class _LoginState extends State<Login> {
             }
           },
           child: Container(
-            color: Colors.white,
+            color: Colors.brown[200],
             width: size.width,
             height: size.height,
             alignment: Alignment.center,
@@ -70,7 +70,7 @@ class _LoginState extends State<Login> {
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 50),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.green.withOpacity(0.5),
+                      color: Colors.brown.withOpacity(0.5),
                     ),
                     child: Column(
                       children: [
@@ -144,7 +144,7 @@ class _LoginState extends State<Login> {
                               child: Text(
                                 "Sign Up",
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.blue,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),

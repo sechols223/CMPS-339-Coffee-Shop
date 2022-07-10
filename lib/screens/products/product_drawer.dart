@@ -15,6 +15,7 @@ class _ProductDrawerState extends State<ProductDrawer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[200],
       appBar: AppBar(
         title: Text("Product Management"),
         backgroundColor: Colors.brown,
@@ -24,7 +25,7 @@ class _ProductDrawerState extends State<ProductDrawer> {
       ),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.only(top: 0, bottom: minimumPadding),
+          padding: EdgeInsets.only(top: 0, bottom: 0),
           children: <Widget>[
             DrawerHeader(
               child: Text("Product Options: "),

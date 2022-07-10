@@ -39,6 +39,7 @@ class _GetAllOrdersState extends State<GetAllOrders> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[200],
       appBar: AppBar(
         title: Text("All Order Details"),
         backgroundColor: Colors.brown,

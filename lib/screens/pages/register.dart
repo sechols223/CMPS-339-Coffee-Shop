@@ -65,7 +65,7 @@ class _RegisterState extends State<Register> {
             }
           },
           child: Container(
-            color: Colors.white,
+            color: Colors.brown[200],
             width: size.width,
             height: size.height,
             alignment: Alignment.center,
@@ -77,12 +77,12 @@ class _RegisterState extends State<Register> {
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 50),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.green.withOpacity(0.5),
+                      color: Colors.brown.withOpacity(0.5),
                     ),
                     child: Column(
                       children: [
                         Text(
-                          "Sign in",
+                          "Sign Up",
                           style: largestText,
                         ),
                         const SizedBox(height: 50),
@@ -190,7 +190,7 @@ class _RegisterState extends State<Register> {
                               child: Text(
                                 "Login",
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.blue,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),

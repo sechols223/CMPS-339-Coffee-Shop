@@ -11,6 +11,7 @@ class OrderModel {
   int customerid;
   int productid;
   int amount;
+  String price;
   String shippingaddress;
 
   OrderModel(
@@ -18,6 +19,7 @@ class OrderModel {
       this.customerid,
       this.productid,
       this.amount,
+      this.price,
       this.shippingaddress});
 
   factory OrderModel.fromJson(Map<String, dynamic> json) => OrderModel(
@@ -25,6 +27,7 @@ class OrderModel {
       customerid: json["customerid"],
       productid: json["productid"],
       amount: json["amount"],
+      price: json["price"],
       shippingaddress: json["shippingaddress"]);
 
   Map<String, dynamic> toJson() => {
@@ -32,6 +35,7 @@ class OrderModel {
         "customerid": customerid,
         "productid": productid,
         "amount": amount,
+        "price": price,
         "shippingaddress": shippingaddress,
       };
 

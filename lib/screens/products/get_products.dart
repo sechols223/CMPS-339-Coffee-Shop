@@ -37,6 +37,7 @@ class _GetAllProductsState extends State<GetAllProducts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[200],
       appBar: AppBar(
         title: Text("Show/Delete Products"),
         backgroundColor: Colors.brown,

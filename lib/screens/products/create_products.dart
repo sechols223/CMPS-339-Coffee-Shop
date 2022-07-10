@@ -45,6 +45,7 @@ class _RegisterProductState extends State<RegisterProduct> {
     TextStyle textStyle = Theme.of(context).textTheme.subtitle2;
 
     return Scaffold(
+        backgroundColor: Colors.brown[200],
         appBar: AppBar(
           title: Text("Create Product"),
           backgroundColor: Colors.brown,
@@ -91,6 +92,7 @@ class _RegisterProductState extends State<RegisterProduct> {
             ),
             RaisedButton(
                 child: Text("Submit"),
+                color: Colors.brown,
                 onPressed: () async {
                   String name = firstController.text;
                   String size = lastController.text;

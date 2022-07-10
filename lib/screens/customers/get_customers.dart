@@ -36,6 +36,7 @@ class _GetAllCustomersState extends State<GetAllCustomers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[200],
       appBar: AppBar(
         title: Text("All Customer Details"),
         backgroundColor: Colors.brown,

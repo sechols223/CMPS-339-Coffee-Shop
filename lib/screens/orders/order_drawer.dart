@@ -15,6 +15,7 @@ class _OrderDrawerState extends State<OrderDrawer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[200],
       appBar: AppBar(title: Text("Order Management")),
       body: Center(
         child: Text("Orders"),
