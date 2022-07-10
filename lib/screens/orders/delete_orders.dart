@@ -15,7 +15,7 @@ class DeleteOrder extends StatefulWidget {
 
 Future<OrderModel> deleteOrder(String name, String size) async {
   var url =
-      'https://coffeeshop-staging.herokuapp.com/api/orders/:id'; //springboot for deleting orders
+      'https://coffeeshop-staging.herokuapp.com/api/orders/:customerid/:orderid'; //springboot for deleting orders
   var response = await http.delete(
     url,
     headers: <String, String>{"Content-Type": "application/json;charset=UTF-8"},
