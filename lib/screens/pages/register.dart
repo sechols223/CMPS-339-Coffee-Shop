@@ -27,7 +27,7 @@ class _RegisterState extends State<Register> {
   );
   String url = "https://coffeeshop-staging.herokuapp.com/register";
 
-  Future save() async {
+  Future save(user) async {
     var res = await http.post(url,
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
@@ -166,7 +166,12 @@ class _RegisterState extends State<Register> {
                             text: "Register",
                             onTap: () async {
                               if (formKey.currentState.validate()) {
-                                save();
+                                save(UserModel(
+                                    usernameController.text,
+                                    passwordController.text,
+                                    firstnameController.text,
+                                    lastnameController.text,
+                                    addressController.text));
                               }
                             }),
                         const SizedBox(height: 30),

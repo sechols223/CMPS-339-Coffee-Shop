@@ -28,21 +28,18 @@ class _LoginState extends State<Login> {
   );
   String url = "https://coffeeshop-staging.herokuapp.com/login";
 
-  Future save() async {
+  Future save(UserModel) async {
     var res = await http.post(url,
         headers: {'Content-Type': 'application/json'},
-        body: json.encode({'email': user.username, 'password': user.password}));
+        body: json
+            .encode({'username': user.username, 'password': user.password}));
     print(res.body);
-    if (res.body != null) {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => MyHomePage(),
-          ));
-    }
   }
 
   TextEditingController usernameController = TextEditingController();
+  TextEditingController firstnameController = TextEditingController();
+  TextEditingController lastnameController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
@@ -123,14 +120,12 @@ class _LoginState extends State<Login> {
                             text: "Sign In",
                             onTap: () async {
                               if (formKey.currentState.validate()) {
-                                save();
-                                if (user != null)
-                                  Navigator.pop(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => MyHomePage()));
-                              } else {
-                                print("Username/password incorrect");
+                                save(UserModel(
+                                    usernameController.text,
+                                    passwordController.text,
+                                    firstnameController.text,
+                                    lastnameController.text,
+                                    addressController.text));
                               }
                             }),
                         const SizedBox(height: 30),
