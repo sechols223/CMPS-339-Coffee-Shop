@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage>
           title: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Text(
-              '#1 Coffee Shop on the Northshore',
+              'Voted #1 Coffee Shop 2022',
               style: style.copyWith(color: Colors.black, fontSize: 16),
             ),
           ),
@@ -55,13 +55,13 @@ class _MyHomePageState extends State<MyHomePage>
                     MaterialPageRoute(builder: (context) => const MyCart()));
               },
               child: Padding(
-                padding: const EdgeInsets.only(top: 20, right: 10),
+                padding: const EdgeInsets.only(top: 6, right: 10),
                 child: Row(
                   children: [
                     const Icon(
                       Icons.shopping_cart_checkout,
                       color: Colors.black,
-                      size: 28,
+                      size: 30,
                     ),
                     const SizedBox(
                       width: 3,
@@ -139,8 +139,6 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   Widget _builditem({List<CoffeeModel> myitems, int index}) {
-    var _screenheight = MediaQuery.of(context).size.height;
-    var _screenwidth = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -151,15 +149,21 @@ class _MyHomePageState extends State<MyHomePage>
                     )));
       },
       child: AspectRatio(
-        aspectRatio: 6 / 2,
+        aspectRatio: 4 / 1,
         child: Container(
           margin: const EdgeInsets.all(40),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: const [
-                BoxShadow(
-                    blurRadius: 10, color: Colors.black, offset: Offset(0, 0))
-              ]),
+            image: const DecorationImage(
+              image: AssetImage('lib/images/coffees.jpg'),
+              alignment: Alignment.topLeft,
+              fit: BoxFit.cover,
+            ),
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: const [
+              BoxShadow(
+                  blurRadius: 5, color: Colors.brown, offset: Offset(0, 0))
+            ],
+          ),
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Stack(
@@ -178,21 +182,18 @@ class _MyHomePageState extends State<MyHomePage>
                               color: Colors.grey),
                         ),
                         Text(
-                          myitems[index].name,
+                          '${myitems[index].name + ' '}',
                           style: style.copyWith(
                               fontSize: 30, fontWeight: FontWeight.bold),
                         ),
-                        const Spacer(),
+                        Text(
+                          '\$${myitems[index].price}',
+                          style: style.copyWith(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.green[800]),
+                        ),
                       ],
-                    ),
-                    const SizedBox(
-                      height: 8,
-                    ),
-                    const Spacer(),
-                    Text(
-                      '\$ ${myitems[index].price}',
-                      style: style.copyWith(
-                          fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

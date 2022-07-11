@@ -3,10 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "48facc144df7eb72a71609f0edf221c3",
+  "assets/AssetManifest.json": "1399259d14f2e12ac73a4fa8ab9ce7b5",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
+"assets/lib/images/beans.jpg": "0d541e2b660a4cba3cabe1c3fb28d1ad",
 "assets/lib/images/coffee-cup.jpg": "886b39d17247ffa0f47c3ade75830252",
+"assets/lib/images/coffee.jpg": "8dfc71f7ef0ea63e5a24aa0371ddb112",
+"assets/lib/images/coffees.jpg": "9d3c1b493c50358a39bcc5d44001ec4b",
 "assets/lib/images/frappe.jpg": "4f3bbf53b1628b8ad1dfd6bdbf3b9c29",
 "assets/lib/images/latte.jpeg": "56c174e5d060574409333f3a099be159",
 "assets/lib/images/login.jpg": "defb74693f417a91b353c13d49abb6a4",
@@ -35,9 +38,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "f1db8608d0042892c9ce294909b60a31",
-"/": "f1db8608d0042892c9ce294909b60a31",
-"main.dart.js": "1545768f6e24ad36a93292b5f23dbdbe",
+"index.html": "a422d7e55b9a52e529a803a63c2977d0",
+"/": "a422d7e55b9a52e529a803a63c2977d0",
+"main.dart.js": "bc84c0244287a64d271656e1440b8ebd",
 "manifest.json": "52e8bb4704581e310cd343814e95700c",
 "version.json": "2afeed28743c57a9dd9fcdde125d5d62"
 };
