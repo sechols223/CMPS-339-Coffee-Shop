@@ -5,9 +5,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_coffee/coffee_example.dart';
-import 'package:flutter_coffee/screens/pages/details_page.dart';
 import 'package:flutter_coffee/models/coffee_model.dart';
+import 'package:flutter_coffee/screens/pages/details_page.dart';
 import 'package:flutter_coffee/screens/pages/mycart.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -140,6 +139,8 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   Widget _builditem({List<CoffeeModel> myitems, int index}) {
+    var _screenheight = MediaQuery.of(context).size.height;
+    var _screenwidth = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -150,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage>
                     )));
       },
       child: AspectRatio(
-        aspectRatio: 3 / 2.3,
+        aspectRatio: 6 / 2,
         child: Container(
           margin: const EdgeInsets.all(40),
           decoration: BoxDecoration(
@@ -163,20 +164,19 @@ class _MyHomePageState extends State<MyHomePage>
             padding: const EdgeInsets.all(20.0),
             child: Stack(
               children: [
-                Center(
-                  child: Image.asset(
-                    myitems[index].img,
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.width,
-                    fit: BoxFit.fill,
-                  ),
-                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
+                        Text(
+                          '${myitems[index].size + ' '}',
+                          style: style.copyWith(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey),
+                        ),
                         Text(
                           myitems[index].name,
                           style: style.copyWith(

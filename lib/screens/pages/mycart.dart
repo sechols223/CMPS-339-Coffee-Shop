@@ -3,7 +3,7 @@
 */
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_coffee/coffee_example.dart';
+import 'package:flutter_coffee/models/coffee_model.dart';
 import 'package:flutter_coffee/screens/pages/checkout_page.dart';
 
 class MyCart extends StatefulWidget {
@@ -23,16 +23,6 @@ class _MyCartState extends State<MyCart> {
       child: Scaffold(
         backgroundColor: Colors.brown[200],
         appBar: AppBar(
-          leading: InkWell(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: const Icon(
-              Icons.chevron_left,
-              size: 30,
-              color: Colors.black,
-            ),
-          ),
           backgroundColor: Colors.transparent,
           centerTitle: true,
           title: Text(
@@ -75,6 +65,7 @@ class _MyCartState extends State<MyCart> {
                               child: Center(
                                 child: Container(
                                   width: _screenwidth * .4,
+                                  height: _screenheight * .1,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       color: Colors.brown),
@@ -166,7 +157,7 @@ class _MyCartState extends State<MyCart> {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            /* Container(
                 padding: const EdgeInsets.all(3),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -175,7 +166,7 @@ class _MyCartState extends State<MyCart> {
                   boughtitems[index].img,
                   fit: BoxFit.cover,
                   width: 80,
-                )),
+                )), */
             const SizedBox(
               width: 10,
             ),

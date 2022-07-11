@@ -15,7 +15,7 @@ class RegisterOrder extends StatefulWidget {
 }
 
 Future<OrderModel> registerOrder(
-    String customerid, productid, amount, BuildContext context) async {
+    String customerid, productid, amount, price, BuildContext context) async {
   var url =
       'https://coffeeshop-staging.herokuapp.com/api/orders/:id'; //spring boot for adding on orders
   var response = await http.post(url,
@@ -23,7 +23,8 @@ Future<OrderModel> registerOrder(
       body: jsonEncode(<String, String>{
         "customerid": customerid,
         "productid": productid,
-        "amount": amount
+        "amount": amount,
+        "price": price
       }));
   String responseString = response.body;
   if (response.statusCode == 200) {
@@ -42,6 +43,7 @@ class _RegisterOrderState extends State<RegisterOrder> {
 
   TextEditingController firstController = TextEditingController();
   TextEditingController secondController = TextEditingController();
+  TextEditingController thirdController = TextEditingController();
   TextEditingController lastController = TextEditingController();
 
   OrderModel order;
@@ -113,17 +115,37 @@ class _RegisterOrderState extends State<RegisterOrder> {
                         borderRadius: BorderRadius.circular(5))),
               ),
             ),
+            Padding(
+              padding:
+                  EdgeInsets.only(top: minimumPadding, bottom: minimumPadding),
+              child: TextFormField(
+                style: textStyle,
+                controller: thirdController,
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return "Price";
+                  }
+                },
+                decoration: InputDecoration(
+                    labelText: "Price",
+                    labelStyle: textStyle,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5))),
+              ),
+            ),
             RaisedButton(
                 child: Text("Submit"),
                 onPressed: () async {
                   String customerid = firstController.text;
                   String productid = lastController.text;
                   String amount = secondController.text;
+                  String price = thirdController.text;
                   OrderModel models = await registerOrder(
-                      customerid, productid, amount, context);
+                      customerid, productid, amount, price, context);
                   firstController.text = '';
                   secondController.text = '';
                   lastController.text = '';
+                  thirdController.text = '';
                   setState(() {
                     order = models;
                   });

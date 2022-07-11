@@ -1,14 +1,14 @@
 class CartModel {
-  String img;
+  int id;
   String name;
   double price;
   int items;
-  int size;
+  String size;
   CartModel({
+    this.id,
     this.name,
     this.price,
     this.items,
-    this.img,
     this.size,
   });
 }

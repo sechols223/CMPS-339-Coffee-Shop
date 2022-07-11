@@ -4,9 +4,8 @@
 */
 import 'package:flutter/material.dart';
 import 'package:flutter_coffee/models/cart_model.dart';
-
-import 'package:flutter_coffee/coffee_example.dart';
 import 'package:flutter_coffee/models/coffee_model.dart';
+import 'package:flutter_coffee/screens/pages/mycart.dart';
 
 class DetailsPage extends StatefulWidget {
   final CoffeeModel item;
@@ -21,123 +20,59 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
-  int value = 0;
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     var _screenheight = MediaQuery.of(context).size.height;
     var _screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.black.withOpacity(.5),
-                Colors.black.withOpacity(.0),
-              ],
-              begin: Alignment.bottomRight,
+      backgroundColor: Colors.brown[300],
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        actions: [
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const MyCart()));
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(top: 6, right: 10),
+              child: Row(
+                children: [
+                  const Icon(
+                    Icons.shopping_cart_checkout,
+                    color: Colors.black,
+                    size: 30,
+                  ),
+                  const SizedBox(
+                    width: 3,
+                  ),
+                  Text(
+                    'Cart',
+                    style: style.copyWith(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black),
+                  )
+                ],
+              ),
             ),
           ),
+        ],
+      ),
+      body: Container(
+          color: Colors.brown[200],
+          width: size.width,
+          height: size.height,
+          alignment: Alignment.center,
           child: Column(
             children: [
               _buildupperpart(
                   screenwidth: _screenwidth, screenheight: _screenheight),
-              _buildbottompart(_screenheight)
+              _buildbottompart(_screenheight * .4, _screenwidth)
             ],
           )),
-    );
-  }
-
-  Expanded _buildbottompart(double _screenheight) {
-    return Expanded(
-        child: Container(
-      color: white,
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Text(
-              widget.item.name,
-              style: style.copyWith(color: Colors.black),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Text(
-              'Size',
-              style: style.copyWith(
-                  fontWeight: FontWeight.w100,
-                  fontSize: 20,
-                  color: Colors.black),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            _buildsizes(),
-            const SizedBox(
-              height: 30,
-            ),
-            _buildbutton(_screenheight)
-          ],
-        ),
-      ),
-    ));
-  }
-
-  Flexible _buildbutton(double _screenheight) {
-    return Flexible(
-      fit: FlexFit.loose,
-      child: Container(
-        height: _screenheight * .08,
-        width: double.maxFinite,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10), color: Colors.brown),
-        child: MaterialButton(
-          onPressed: () {
-            if (boughtitems
-                .map((item) => item.name)
-                .contains(widget.item.name)) {
-              final snackBar = SnackBar(
-                  backgroundColor: Colors.brown,
-                  duration: const Duration(seconds: 2),
-                  content: Text(
-                    'Item already in cart.',
-                    style: style.copyWith(fontSize: 14, color: Colors.white),
-                  ));
-              ScaffoldMessenger.of(context).showSnackBar(snackBar);
-            } else {
-              boughtitems.add(
-                CartModel(
-                  name: widget.item.name,
-                  price: widget.item.price,
-                  img: widget.item.img,
-                  items: 1,
-                  size: sizes[value],
-                ),
-              );
-              total = total + widget.item.price;
-              Navigator.pop(context);
-            }
-          },
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(
-                Icons.backpack,
-                color: white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Text(
-                'Add To Cart',
-                style: style.copyWith(fontSize: 18, color: Colors.white),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 
@@ -155,28 +90,11 @@ class _DetailsPageState extends State<DetailsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const SizedBox(
-              height: 30,
-            ),
-            Row(
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                  child: const Icon(
-                    Icons.chevron_left,
-                    color: white,
-                    size: 40,
-                  ),
-                ),
-                const Spacer(),
-              ],
-            ),
             Center(
               child: Image.asset(
-                widget.item.img,
-                width: 500,
+                'lib/images/frappe.jpg',
+                width: screenwidth * .5,
+                height: screenheight * .65,
                 fit: BoxFit.cover,
               ),
             ),
@@ -186,44 +104,83 @@ class _DetailsPageState extends State<DetailsPage> {
     );
   }
 
-  Widget _buildsizes() {
-    return SizedBox(
-        height: 40,
-        width: 500,
-        child: ListView(
-          physics: const NeverScrollableScrollPhysics(),
-          scrollDirection: Axis.horizontal,
+  Expanded _buildbottompart(double _screenheight, double _screenwidth) {
+    return Expanded(
+        child: Container(
+      color: Colors.brown[300],
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            _buildsizesitem(index: 0, title: sizes[0]),
-            _buildsizesitem(index: 1, title: sizes[1]),
-            _buildsizesitem(index: 2, title: sizes[2]),
+            Center(
+              child: Text(
+                '${widget.item.size + ' ' + widget.item.name + ' \$' + widget.item.price.toString()}',
+                style: style.copyWith(color: Colors.black),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            _buildbutton(_screenheight, _screenwidth)
           ],
-        ));
+        ),
+      ),
+    ));
   }
 
-  Widget _buildsizesitem({int index, int title}) {
-    return AspectRatio(
-      aspectRatio: 1 / 1,
-      child: GestureDetector(
-        onTap: () {
-          setState(() {
-            value = index;
-          });
-        },
+  Flexible _buildbutton(double _screenheight, double _screenwidth) {
+    return Flexible(
+      fit: FlexFit.loose,
+      child: Center(
         child: Container(
+          height: _screenheight * .25,
+          width: _screenwidth * .6,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: value == index ? Colors.brown : Colors.transparent,
-          ),
-          child: Center(
-              child: Text(
-            title.toString(),
-            style: style.copyWith(
-              fontSize: 15,
-              fontWeight: FontWeight.w900,
-              color: value == index ? Colors.white : Colors.black,
+              borderRadius: BorderRadius.circular(10), color: Colors.brown),
+          child: MaterialButton(
+            onPressed: () {
+              if (boughtitems
+                  .map((item) => item.name)
+                  .contains(widget.item.name)) {
+                final snackBar = SnackBar(
+                    backgroundColor: Colors.brown,
+                    duration: const Duration(seconds: 2),
+                    content: Text(
+                      'Item already in cart.',
+                      style: style.copyWith(fontSize: 14, color: Colors.white),
+                    ));
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              } else {
+                boughtitems.add(
+                  CartModel(
+                    name: widget.item.name,
+                    price: widget.item.price,
+                    items: 1,
+                  ),
+                );
+                total = total + widget.item.price;
+                Navigator.pop(context);
+              }
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(
+                  Icons.shopping_cart,
+                  color: white,
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                Text(
+                  'Add To Cart',
+                  style: style.copyWith(fontSize: 18, color: Colors.white),
+                ),
+              ],
             ),
-          )),
+          ),
         ),
       ),
     );

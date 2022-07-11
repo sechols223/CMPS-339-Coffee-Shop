@@ -51,12 +51,6 @@ class _LoginState extends State<Login> {
       body: Form(
         key: formKey,
         child: GestureDetector(
-          onTap: () {
-            FocusScopeNode currentFocus = FocusScope.of(context);
-            if (!currentFocus.hasPrimaryFocus) {
-              currentFocus.unfocus();
-            }
-          },
           child: Container(
             color: Colors.brown[200],
             width: size.width,

@@ -3,7 +3,7 @@
 */
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_coffee/coffee_example.dart';
+import 'package:flutter_coffee/models/coffee_model.dart';
 import 'package:flutter_coffee/models/cart_model.dart';
 import 'package:flutter_coffee/screens/pages/myhomepage.dart';
 
@@ -16,6 +16,7 @@ class CheckoutPage extends StatefulWidget {
 }
 
 class _CheckoutPageState extends State<CheckoutPage> {
+  double tax = total * .10;
   var isloading = false;
   @override
   Widget build(BuildContext context) {
@@ -74,7 +75,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               height: 30,
                             ),
                             Text(
-                              '\$$total',
+                              '\$${total + tax}',
                               maxLines: 1,
                               style: style.copyWith(
                                   color: Colors.black, fontSize: 40),
@@ -199,7 +200,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
             dismissOnBackKeyPress: false,
             btnOkOnPress: () {
               boughtitems.clear();
-              total = 0.0;
+              total = 0.00;
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (_) => const MyHomePage()));
             },

@@ -17,18 +17,13 @@ class UpdateOrder extends StatefulWidget {
 
   @override
   _UpdateOrderState createState() => _UpdateOrderState(orderModel);
-  // OrderModel orderModel;
-  //
-  // UpdateOrder(this.orderModel);
-  //
-  // @override
-  // _UpdateOrderState createState() => _UpdateOrderState(orderModel);
 }
 
 // ignore: missing_return
 Future<OrderModel> updateOrders(
     OrderModel orderModel, BuildContext context) async {
-  var url = ":8080/api/orders"; // spring boot for updating orders
+  var url =
+      "https://coffeeshop-staging.herokuapp.com/api/orders"; // spring boot for updating orders
   var response = await http.put(url,
       headers: <String, String>{"Content-Type": "application/json"},
       body: jsonEncode(orderModel));
@@ -51,6 +46,7 @@ class _UpdateOrderState extends State<UpdateOrder> {
   Future<List<OrderModel>> orders;
   TextEditingController firstController;
   TextEditingController secondController;
+  TextEditingController thirdController;
   TextEditingController lastController;
 
   _UpdateOrderState(this.orderModel) {
@@ -59,6 +55,8 @@ class _UpdateOrderState extends State<UpdateOrder> {
         TextEditingController(text: this.orderModel.customerid.toString());
     secondController =
         TextEditingController(text: this.orderModel.productid.toString());
+    thirdController =
+        TextEditingController(text: this.orderModel.price.toString());
     lastController =
         TextEditingController(text: this.orderModel.amount.toString());
   }
@@ -160,6 +158,24 @@ class _UpdateOrderState extends State<UpdateOrder> {
                       borderRadius: BorderRadius.circular(5))),
             ),
           ),
+          Padding(
+            padding:
+                EdgeInsets.only(top: minimumPadding, bottom: minimumPadding),
+            child: TextFormField(
+              style: textStyle,
+              controller: thirdController,
+              validator: (String value) {
+                if (value.isEmpty) {
+                  return "Enter Price";
+                }
+              },
+              decoration: InputDecoration(
+                  labelText: "Enter Price",
+                  labelStyle: textStyle,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5))),
+            ),
+          ),
           ElevatedButton(
               child: Text("Update Details"),
               onPressed: () async {
@@ -168,6 +184,7 @@ class _UpdateOrderState extends State<UpdateOrder> {
                 emp.customerid = firstController.text as int;
                 emp.productid = lastController.text as int;
                 emp.amount = secondController.text as int;
+                emp.price = thirdController.text;
 
                 OrderModel orders = await updateOrders(emp, context);
                 setState(() {

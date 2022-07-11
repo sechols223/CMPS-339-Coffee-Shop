@@ -31,6 +31,7 @@ class _GetAllOrdersState extends State<GetAllOrders> {
       orders.customerid = e["customerid"];
       orders.productid = e["productid"];
       orders.amount = e["amount"];
+      orders.price = e["price"];
       order.add(orders);
     }
     return order;
@@ -61,14 +62,20 @@ class _GetAllOrdersState extends State<GetAllOrders> {
                         ' ' +
                         'productid' +
                         ' ' +
-                        'amount'),
+                        'amount' +
+                        ' ' +
+                        'price' +
+                        ' '),
                     subtitle: Text('${snapshot.data[index].id}' +
                         ' ' +
                         '${snapshot.data[index].customerid}' +
                         '  ' +
-                        '${snapshot.data[index].productid}'
-                            '  ' +
-                        '${snapshot.data[index].amount}'),
+                        '${snapshot.data[index].productid}' +
+                        '  ' +
+                        '${snapshot.data[index].amount}' +
+                        '  ' +
+                        '${snapshot.data[index].price}' +
+                        '  '),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -111,10 +118,19 @@ class DetailPage extends StatelessWidget {
         child: Text('customerid' +
             ' ' +
             orderModel.customerid.toString() +
-            ' ' 'productid' +
+            ' ' +
+            'productid' +
+            ' ' +
             orderModel.productid.toString() +
-            ' ' 'productid' +
-            orderModel.amount.toString()),
+            ' ' +
+            'productid' +
+            ' ' +
+            orderModel.amount.toString() +
+            ' ' +
+            'price' +
+            ' ' +
+            orderModel.price.toString() +
+            ' '),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
