@@ -13,14 +13,26 @@ class DeleteProduct extends StatefulWidget {
   _DeleteProductState createState() => _DeleteProductState();
 }
 
-Future<ProductModel> deleteProduct(String name, String size) async {
-  var url = 'https://coffeeshop-staging.herokuapp.com/api/products/:id';
-
-  var response = await http.delete(
-    url,
-    headers: <String, String>{"Content-Type": "application/json;charset=UTF-8"},
+Future<ProductModel> deleteProduct(int id, String name, String size) async {
+  final http.Response response = await http.delete(
+    Uri.parse('https://coffeeshop-staging.herokuapp.com/api/products/:id'),
+    headers: <String, String>{
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
   );
-  return ProductModel.fromJson(jsonDecode(response.body));
+
+  if (response.statusCode == 200) {
+    // If the server did return a 200 OK response,
+    // then parse the JSON. After deleting,
+    // you'll get an empty JSON `{}` response.
+    // Don't return `null`, otherwise `snapshot.hasData`
+    // will always return false on `FutureBuilder`.
+    return ProductModel.fromJson(jsonDecode(response.body));
+  } else {
+    // If the server did not return a "200 OK response",
+    // then throw an exception.
+    throw Exception('Failed to delete product.');
+  }
 }
 
 class _DeleteProductState extends State<DeleteProduct> {

@@ -1,0 +1,10 @@
+^C:\USERS\GARRE\DESKTOP\CMPS-339-COFFEE-SHOP\BUILD\WINDOWS\CMAKEFILES\8056042F5D18CA4DA317118A1964AC8F\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

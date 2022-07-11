@@ -80,8 +80,9 @@ class DetailPage extends StatelessWidget {
 
   DetailPage(this.productModel);
 
-  deleteProduct1(ProductModel productModel) async {
-    final url = Uri.parse('/api/products/:id');
+  deleteProduct(ProductModel ProductModel) async {
+    final url =
+        Uri.parse('https://coffeeshop-staging.herokuapp.com/api/products/:id');
     final request = http.Request("DELETE", url);
     request.headers
         .addAll(<String, String>{"Content-type": "application/json"});
@@ -98,12 +99,21 @@ class DetailPage extends StatelessWidget {
         actions: <Widget>[],
       ),
       body: Container(
-        child: Text(
-            'name' + ' ' + productModel.name + ' ' 'size' + productModel.size),
+        child: Text('id' +
+            ' ' +
+            productModel.id.toString() +
+            ' ' +
+            'name' +
+            ' ' +
+            productModel.name +
+            ' ' +
+            'size' +
+            ' ' +
+            productModel.size),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          deleteProduct1(productModel);
+          deleteProduct(productModel);
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => DeleteProduct()));
         },

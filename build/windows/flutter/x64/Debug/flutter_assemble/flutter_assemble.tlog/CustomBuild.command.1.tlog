@@ -1,0 +1,28 @@
+^C:\USERS\GARRE\DESKTOP\CMPS-339-COFFEE-SHOP\BUILD\WINDOWS\CMAKEFILES\9B1579A87D9C07B1DA661FA61E0D8C44\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+E:\VisualStudios\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\Users\garre\Desktop\CMPS-339-Coffee-Shop FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\garre\Desktop\CMPS-339-Coffee-Shop\windows\flutter\ephemeral PROJECT_DIR=C:\Users\garre\Desktop\CMPS-339-Coffee-Shop FLUTTER_TARGET=C:\Users\garre\Desktop\CMPS-339-Coffee-Shop\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\garre\Desktop\CMPS-339-Coffee-Shop\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GARRE\DESKTOP\CMPS-339-COFFEE-SHOP\BUILD\WINDOWS\CMAKEFILES\72F5BF38106D4924AAE3628A668BA777\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GARRE\DESKTOP\CMPS-339-COFFEE-SHOP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+E:\VisualStudios\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SC:/Users/garre/Desktop/CMPS-339-Coffee-Shop/windows -BC:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows --check-stamp-file C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

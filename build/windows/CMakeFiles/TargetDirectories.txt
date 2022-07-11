@@ -1,0 +1,10 @@
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/CMakeFiles/INSTALL.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/CMakeFiles/ALL_BUILD.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/CMakeFiles/ZERO_CHECK.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/flutter/CMakeFiles/flutter_assemble.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/flutter/CMakeFiles/INSTALL.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/CMakeFiles/flutter_coffee.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/CMakeFiles/INSTALL.dir
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/CMakeFiles/ALL_BUILD.dir
