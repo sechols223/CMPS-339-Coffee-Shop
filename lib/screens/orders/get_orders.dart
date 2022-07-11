@@ -32,6 +32,7 @@ class _GetAllOrdersState extends State<GetAllOrders> {
       orders.productid = e["productid"];
       orders.amount = e["amount"];
       orders.price = e["price"];
+      orders.shippingaddress = e["shippingaddress"];
       order.add(orders);
     }
     return order;
@@ -65,6 +66,8 @@ class _GetAllOrdersState extends State<GetAllOrders> {
                         'amount' +
                         ' ' +
                         'price' +
+                        ' ' +
+                        'shippingaddress' +
                         ' '),
                     subtitle: Text('${snapshot.data[index].id}' +
                         ' ' +
@@ -75,6 +78,8 @@ class _GetAllOrdersState extends State<GetAllOrders> {
                         '${snapshot.data[index].amount}' +
                         '  ' +
                         '${snapshot.data[index].price}' +
+                        '  ' +
+                        '${snapshot.data[index].shippingaddress}' +
                         '  '),
                     onTap: () {
                       Navigator.push(
@@ -130,6 +135,8 @@ class DetailPage extends StatelessWidget {
             'price' +
             ' ' +
             orderModel.price.toString() +
+            ' ' +
+            orderModel.shippingaddress.toString() +
             ' '),
       ),
       floatingActionButton: FloatingActionButton(

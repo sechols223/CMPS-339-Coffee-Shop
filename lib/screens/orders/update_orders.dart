@@ -47,6 +47,7 @@ class _UpdateOrderState extends State<UpdateOrder> {
   TextEditingController firstController;
   TextEditingController secondController;
   TextEditingController thirdController;
+  TextEditingController fourthController;
   TextEditingController lastController;
 
   _UpdateOrderState(this.orderModel) {
@@ -57,6 +58,8 @@ class _UpdateOrderState extends State<UpdateOrder> {
         TextEditingController(text: this.orderModel.productid.toString());
     thirdController =
         TextEditingController(text: this.orderModel.price.toString());
+    fourthController =
+        TextEditingController(text: this.orderModel.shippingaddress.toString());
     lastController =
         TextEditingController(text: this.orderModel.amount.toString());
   }
@@ -176,6 +179,24 @@ class _UpdateOrderState extends State<UpdateOrder> {
                       borderRadius: BorderRadius.circular(5))),
             ),
           ),
+          Padding(
+            padding:
+                EdgeInsets.only(top: minimumPadding, bottom: minimumPadding),
+            child: TextFormField(
+              style: textStyle,
+              controller: fourthController,
+              validator: (String value) {
+                if (value.isEmpty) {
+                  return "Enter Shipping Address";
+                }
+              },
+              decoration: InputDecoration(
+                  labelText: "Shipping address",
+                  labelStyle: textStyle,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5))),
+            ),
+          ),
           ElevatedButton(
               child: Text("Update Details"),
               onPressed: () async {
@@ -185,6 +206,7 @@ class _UpdateOrderState extends State<UpdateOrder> {
                 emp.productid = lastController.text as int;
                 emp.amount = secondController.text as int;
                 emp.price = thirdController.text;
+                emp.shippingaddress = fourthController.text;
 
                 OrderModel orders = await updateOrders(emp, context);
                 setState(() {
