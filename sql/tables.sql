@@ -1,6 +1,6 @@
 DO
 $do$
-    BEGIN
+    BEGIN 
 
         CREATE TABLE IF NOT EXISTS "product"
         (

@@ -149,25 +149,28 @@ class _MyHomePageState extends State<MyHomePage>
                     )));
       },
       child: AspectRatio(
-        aspectRatio: 4 / 1,
+        aspectRatio: 3 / 2,
         child: Container(
-          margin: const EdgeInsets.all(40),
+          margin: const EdgeInsets.all(90),
           decoration: BoxDecoration(
-            image: const DecorationImage(
-              image: AssetImage('lib/images/coffees.jpg'),
-              alignment: Alignment.topLeft,
-              fit: BoxFit.cover,
-            ),
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(10),
             boxShadow: const [
               BoxShadow(
-                  blurRadius: 5, color: Colors.brown, offset: Offset(0, 0))
+                  blurRadius: 4, color: Colors.brown, offset: Offset(0, 0))
             ],
           ),
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(15.0),
             child: Stack(
               children: [
+                Center(
+                  child: Image.asset(
+                    myitems[index].img,
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.width,
+                    fit: BoxFit.fill,
+                  ),
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -175,23 +178,9 @@ class _MyHomePageState extends State<MyHomePage>
                     Row(
                       children: [
                         Text(
-                          '${myitems[index].size + ' '}',
-                          style: style.copyWith(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey),
-                        ),
-                        Text(
-                          '${myitems[index].name + ' '}',
+                          '${'  ' + myitems[index].name + ' '}',
                           style: style.copyWith(
                               fontSize: 30, fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          '\$${myitems[index].price}',
-                          style: style.copyWith(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.green[800]),
                         ),
                       ],
                     ),

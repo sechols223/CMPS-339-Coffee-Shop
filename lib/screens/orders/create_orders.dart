@@ -15,7 +15,7 @@ class RegisterOrder extends StatefulWidget {
 }
 
 Future<OrderModel> registerOrder(String customerid, productid, amount, price,
-    shippingaddress, BuildContext context) async {
+    shippingaddress, date, BuildContext context) async {
   var url =
       'https://coffeeshop-staging.herokuapp.com/api/orders/:id'; //spring boot for adding on orders
   var response = await http.post(url,
@@ -25,7 +25,8 @@ Future<OrderModel> registerOrder(String customerid, productid, amount, price,
         "productid": productid,
         "amount": amount,
         "price": price,
-        "shippingaddress": shippingaddress
+        "shippingaddress": shippingaddress,
+        "date": date,
       }));
   String responseString = response.body;
   if (response.statusCode == 200) {
@@ -46,6 +47,8 @@ class _RegisterOrderState extends State<RegisterOrder> {
   TextEditingController secondController = TextEditingController();
   TextEditingController thirdController = TextEditingController();
   TextEditingController fourthController = TextEditingController();
+  TextEditingController fifthController = TextEditingController();
+
   TextEditingController lastController = TextEditingController();
 
   OrderModel order;
@@ -153,6 +156,24 @@ class _RegisterOrderState extends State<RegisterOrder> {
                         borderRadius: BorderRadius.circular(5))),
               ),
             ),
+            Padding(
+              padding:
+                  EdgeInsets.only(top: minimumPadding, bottom: minimumPadding),
+              child: TextFormField(
+                style: textStyle,
+                controller: fifthController,
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return "Date";
+                  }
+                },
+                decoration: InputDecoration(
+                    labelText: "Date",
+                    labelStyle: textStyle,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5))),
+              ),
+            ),
             RaisedButton(
                 child: Text("Submit"),
                 onPressed: () async {
@@ -161,8 +182,9 @@ class _RegisterOrderState extends State<RegisterOrder> {
                   String amount = secondController.text;
                   String price = thirdController.text;
                   String shippingaddress = fourthController.text;
+                  String date = fifthController.text;
                   OrderModel models = await registerOrder(customerid, productid,
-                      amount, price, shippingaddress, context);
+                      amount, price, shippingaddress, date, context);
                   firstController.text = '';
                   secondController.text = '';
                   lastController.text = '';

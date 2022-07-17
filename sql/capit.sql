@@ -12,3 +12,4 @@ CREATE TRIGGER capitalize
     ON customer
     FOR EACH ROW
 EXECUTE FUNCTION cap();
+ 

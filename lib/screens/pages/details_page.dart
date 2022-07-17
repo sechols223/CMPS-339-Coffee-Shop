@@ -1,7 +1,3 @@
-/*
-  Sample details page that is using sample coffees to fill the cart.
-  Need to rework so its accessed through the database
-*/
 import 'package:flutter/material.dart';
 import 'package:flutter_coffee/models/cart_model.dart';
 import 'package:flutter_coffee/models/coffee_model.dart';
@@ -20,6 +16,7 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
+  int value = 0;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -70,10 +67,96 @@ class _DetailsPageState extends State<DetailsPage> {
             children: [
               _buildupperpart(
                   screenwidth: _screenwidth, screenheight: _screenheight),
-              _buildbottompart(_screenheight * .4, _screenwidth)
+              _buildbottompart(_screenheight, _screenwidth)
             ],
           )),
     );
+  }
+
+  Expanded _buildbottompart(double _screenheight, double _screenwidth) {
+    return Expanded(
+        child: Container(
+      color: Colors.brown[300],
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Center(
+              child: Text(
+                '${widget.item.name}',
+                style: style.copyWith(color: Colors.black),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Center(child: _buildsizes()),
+            const SizedBox(
+              height: 20,
+            ),
+            Center(child: _buildbutton(_screenheight, _screenwidth))
+          ],
+        ),
+      ),
+    ));
+  }
+
+  Flexible _buildbutton(double _screenheight, double _screenwidth) {
+    return Flexible(
+        fit: FlexFit.loose,
+        child: Center(
+          child: Container(
+            height: _screenheight * .09,
+            width: _screenwidth * .6,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10), color: Colors.brown),
+            child: MaterialButton(
+              onPressed: () {
+                if (boughtitems
+                    .map((item) => item.name)
+                    .contains(widget.item.name)) {
+                  final snackBar = SnackBar(
+                      backgroundColor: Colors.brown,
+                      duration: const Duration(seconds: 2),
+                      content: Text(
+                        'Item already in cart.',
+                        style:
+                            style.copyWith(fontSize: 14, color: Colors.white),
+                      ));
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                } else {
+                  boughtitems.add(
+                    CartModel(
+                      name: widget.item.name,
+                      price: widget.item.price,
+                      items: 1,
+                    ),
+                  );
+                  total = total + widget.item.price;
+                  Navigator.pop(context);
+                }
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(
+                    Icons.shopping_cart,
+                    color: white,
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    'Add To Cart',
+                    style: style.copyWith(fontSize: 18, color: Colors.white),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ));
   }
 
   Widget _buildupperpart({var screenwidth, var screenheight}) {
@@ -90,11 +173,14 @@ class _DetailsPageState extends State<DetailsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            const SizedBox(
+              height: 15,
+            ),
             Center(
               child: Image.asset(
-                'lib/images/frappe.jpg',
-                width: screenwidth * .5,
-                height: screenheight * .65,
+                widget.item.img,
+                height: 630,
+                width: 900,
                 fit: BoxFit.cover,
               ),
             ),
@@ -104,83 +190,46 @@ class _DetailsPageState extends State<DetailsPage> {
     );
   }
 
-  Expanded _buildbottompart(double _screenheight, double _screenwidth) {
-    return Expanded(
-        child: Container(
-      color: Colors.brown[300],
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Center(
-              child: Text(
-                '${widget.item.size + ' ' + widget.item.name + ' \$' + widget.item.price.toString()}',
-                style: style.copyWith(color: Colors.black),
-              ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            _buildbutton(_screenheight, _screenwidth)
-          ],
-        ),
-      ),
-    ));
+  Widget _buildsizes() {
+    return Center(
+      child: SizedBox(
+          height: 42,
+          width: 500,
+          child: ListView(
+            physics: const NeverScrollableScrollPhysics(),
+            scrollDirection: Axis.horizontal,
+            children: [
+              _buildsizesitem(index: 0, title: sizes[0]),
+              _buildsizesitem(index: 1, title: sizes[1]),
+              _buildsizesitem(index: 2, title: sizes[2]),
+            ],
+          )),
+    );
   }
 
-  Flexible _buildbutton(double _screenheight, double _screenwidth) {
-    return Flexible(
-      fit: FlexFit.loose,
-      child: Center(
+  Widget _buildsizesitem({int index, String title}) {
+    return AspectRatio(
+      aspectRatio: 4 / 1,
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            value = index;
+          });
+        },
         child: Container(
-          height: _screenheight * .25,
-          width: _screenwidth * .6,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), color: Colors.brown),
-          child: MaterialButton(
-            onPressed: () {
-              if (boughtitems
-                  .map((item) => item.name)
-                  .contains(widget.item.name)) {
-                final snackBar = SnackBar(
-                    backgroundColor: Colors.brown,
-                    duration: const Duration(seconds: 2),
-                    content: Text(
-                      'Item already in cart.',
-                      style: style.copyWith(fontSize: 14, color: Colors.white),
-                    ));
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
-              } else {
-                boughtitems.add(
-                  CartModel(
-                    name: widget.item.name,
-                    price: widget.item.price,
-                    items: 1,
-                  ),
-                );
-                total = total + widget.item.price;
-                Navigator.pop(context);
-              }
-            },
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Icon(
-                  Icons.shopping_cart,
-                  color: white,
-                ),
-                const SizedBox(
-                  width: 8,
-                ),
-                Text(
-                  'Add To Cart',
-                  style: style.copyWith(fontSize: 18, color: Colors.white),
-                ),
-              ],
-            ),
+            borderRadius: BorderRadius.circular(10),
+            color: value == index ? Colors.brown : Colors.transparent,
           ),
+          child: Center(
+              child: Text(
+            title.toString(),
+            style: style.copyWith(
+              fontSize: 15,
+              fontWeight: FontWeight.w900,
+              color: value == index ? Colors.white : Colors.black,
+            ),
+          )),
         ),
       ),
     );

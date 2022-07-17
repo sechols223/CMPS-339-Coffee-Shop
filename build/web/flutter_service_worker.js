@@ -3,17 +3,17 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "1399259d14f2e12ac73a4fa8ab9ce7b5",
+  "assets/AssetManifest.json": "d90fd58e242989aafbf1118954b0cba2",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/lib/images/beans.jpg": "0d541e2b660a4cba3cabe1c3fb28d1ad",
 "assets/lib/images/coffee-cup.jpg": "886b39d17247ffa0f47c3ade75830252",
 "assets/lib/images/coffee.jpg": "8dfc71f7ef0ea63e5a24aa0371ddb112",
 "assets/lib/images/coffees.jpg": "9d3c1b493c50358a39bcc5d44001ec4b",
-"assets/lib/images/frappe.jpg": "4f3bbf53b1628b8ad1dfd6bdbf3b9c29",
-"assets/lib/images/latte.jpeg": "56c174e5d060574409333f3a099be159",
+"assets/lib/images/frappe.jpg": "31cbae1dc12d30fdb1c244f08898c60d",
+"assets/lib/images/latte.jpeg": "e2aaa116bf9f74de960c971fee508009",
 "assets/lib/images/login.jpg": "defb74693f417a91b353c13d49abb6a4",
-"assets/lib/images/macchiatto.jpg": "94be0e11bc5518b172f7474fe186fba6",
+"assets/lib/images/macchiato.jpg": "4cc82d4cdfdfc42035b6d1c779a683a8",
 "assets/NOTICES": "b422ce335ff3d0528d110c9e4d77419f",
 "assets/packages/awesome_dialog/assets/flare/error.flr": "e3b124665e57682dab45f4ee8a16b3c9",
 "assets/packages/awesome_dialog/assets/flare/info.flr": "bc654ba9a96055d7309f0922746fe7a7",
@@ -38,9 +38,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "a422d7e55b9a52e529a803a63c2977d0",
-"/": "a422d7e55b9a52e529a803a63c2977d0",
-"main.dart.js": "bc84c0244287a64d271656e1440b8ebd",
+"index.html": "0b29321be56b716d9ebcf3dcf75d42f3",
+"/": "0b29321be56b716d9ebcf3dcf75d42f3",
+"main.dart.js": "ecbaee9c6fd40cf95c9f36d6fdc6086c",
 "manifest.json": "52e8bb4704581e310cd343814e95700c",
 "version.json": "2afeed28743c57a9dd9fcdde125d5d62"
 };

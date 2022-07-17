@@ -4,12 +4,14 @@ C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flut
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/beans.jpg
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/coffee-cup.jpg
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/coffee.jpg
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/coffees.jpg
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/frappe.jpg
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/latte.jpeg
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/login.jpg
-C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/macchiatto.jpg
-C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/NOTICES
+C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/lib/images/macchiato.jpg
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/packages/awesome_dialog/assets/flare/error.flr
 C:/Users/garre/Desktop/CMPS-339-Coffee-Shop/build/windows/runner/Debug/data/flutter_assets/packages/awesome_dialog/assets/flare/info.flr

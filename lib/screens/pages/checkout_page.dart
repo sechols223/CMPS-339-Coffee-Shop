@@ -20,6 +20,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
   var isloading = false;
   @override
   Widget build(BuildContext context) {
+    double TotalWithTax = total + tax;
+    String FinalTotal = TotalWithTax.toStringAsFixed(2);
     var _screenheight = MediaQuery.of(context).size.height;
     var _screenwidth = MediaQuery.of(context).size.width;
     return SafeArea(
@@ -75,7 +77,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               height: 30,
                             ),
                             Text(
-                              '\$${total + tax}',
+                              '\$${FinalTotal}',
                               maxLines: 1,
                               style: style.copyWith(
                                   color: Colors.black, fontSize: 40),

@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, sized_box_for_whitespace, use_key_in_widget_constructors
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_coffee/entities/bloc/page_bloc.dart';
 import 'package:flutter_coffee/entities/responsive.dart';

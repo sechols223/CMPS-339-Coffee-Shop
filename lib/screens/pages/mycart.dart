@@ -15,8 +15,11 @@ class MyCart extends StatefulWidget {
 
 class _MyCartState extends State<MyCart> {
   var index = 0;
+  double tax = total * .10;
   @override
   Widget build(BuildContext context) {
+    double TotalWithTax = total + tax;
+    String FinalTotal = TotalWithTax.toStringAsFixed(2);
     var _screenheight = MediaQuery.of(context).size.height;
     var _screenwidth = MediaQuery.of(context).size.width;
     return SafeArea(
@@ -93,7 +96,7 @@ class _MyCartState extends State<MyCart> {
                             Expanded(
                               flex: 1,
                               child: Text(
-                                'Total = \$$total',
+                                'Total = \$${FinalTotal}',
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: style.copyWith(
@@ -183,13 +186,8 @@ class _MyCartState extends State<MyCart> {
                     maxLines: 1,
                     style: style.copyWith(fontSize: 16, color: Colors.black),
                   ),
-                  Text(
-                    '\$${boughtitems[index].price}',
-                    maxLines: 1,
-                    style: style.copyWith(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                  const SizedBox(
+                    height: 10,
                   ),
                   Text(
                     'Items : ${boughtitems[index].items}',
@@ -211,7 +209,7 @@ class _MyCartState extends State<MyCart> {
                   height: 10,
                 ),
                 Text(
-                  'Size:${boughtitems[index].size}',
+                  '\$${boughtitems[index].price}',
                   maxLines: 1,
                   style: style.copyWith(
                       fontSize: 14,
